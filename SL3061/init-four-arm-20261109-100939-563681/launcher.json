@@ -1,0 +1,33 @@
+{
+  "token": "4b4e93ae666945e9a73cccd0ceb12481",
+  "output": "/workspace/Data-5090/SL3061/init-four-arm-20261109-100939-563681",
+  "place": 61,
+  "command": [
+    "/usr/bin/python3",
+    "-u",
+    "/workspace/TempName-5090/tools/5090/init.py",
+    "--place",
+    "61",
+    "--trials",
+    "1",
+    "--blocks",
+    "8",
+    "--execute",
+    "--foreground",
+    "--out",
+    "/workspace/Data-5090/SL3061/init-four-arm-20261109-100939-563681",
+    "--jobs",
+    "128",
+    "--python",
+    "/usr/bin/python3",
+    "--background-token",
+    "4b4e93ae666945e9a73cccd0ceb12481",
+    "--cuda-home",
+    "/usr/local/cuda-12.9",
+    "--nvcc",
+    "/usr/local/cuda-12.9/bin/nvcc"
+  ],
+  "status": "launched",
+  "launcher_pid": 77442,
+  "controller_pid": 77713
+}

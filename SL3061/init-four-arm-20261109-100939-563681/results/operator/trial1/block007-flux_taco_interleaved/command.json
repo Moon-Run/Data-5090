@@ -1,0 +1,42 @@
+{
+  "job": {
+    "stage": "operator",
+    "arm": "flux_taco_interleaved",
+    "trial": 1,
+    "block": 7,
+    "index": 30,
+    "directory": "operator/trial1/block007-flux_taco_interleaved"
+  },
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "torch.distributed.run",
+    "--standalone",
+    "--nnodes=1",
+    "--nproc_per_node=8",
+    "/workspace/Data-5090/SL3061/init-four-arm-20261109-100939-563681/sources/python/flux_5090/worker.py",
+    "--config",
+    "/workspace/Data-5090/SL3061/init-four-arm-20261109-100939-563681/results/operator/trial1/block007-flux_taco_interleaved/config.json",
+    "--out",
+    "/workspace/Data-5090/SL3061/init-four-arm-20261109-100939-563681/results/operator/trial1/block007-flux_taco_interleaved",
+    "--stage",
+    "operator",
+    "--arm",
+    "flux_taco_interleaved"
+  ],
+  "runtime_environment": {
+    "NCCL_VERSION": "2.27.3",
+    "TORCH_NCCL_USE_COMM_NONBLOCKING": "0",
+    "NCCL_P2P_DISABLE": "1",
+    "NCCL_SHM_DISABLE": "0",
+    "NCCL_NVLS_ENABLE": "0",
+    "CUDA_DEVICE_MAX_CONNECTIONS": "8",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "CUDA_HOME": "/usr/local/cuda-12.9"
+  },
+  "visibility": {
+    "CUDA_VISIBLE_DEVICES": null,
+    "OMP_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null
+  }
+}

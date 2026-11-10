@@ -1,0 +1,502 @@
+{
+  "protocol": "rtx5090-flux-taco-arrival-four-arm-v1",
+  "run_id": "c05fc7c808ad4ec19ff33b820a6198f6",
+  "world_size": 8,
+  "place": 61,
+  "model": {
+    "layers": 32,
+    "hidden": 4096,
+    "ffn": 16384,
+    "heads": 32,
+    "sequence": 2048,
+    "micro_batch": 1,
+    "accumulation_steps": 4,
+    "vocab": 33792,
+    "chunk_rows": 128
+  },
+  "timing": {
+    "warmup_steps": 10,
+    "timed_steps": 50,
+    "operator_warmup": 100,
+    "operator_iterations": 200
+  },
+  "seed": 1234,
+  "token_seed": 4321,
+  "nvcc": "/usr/local/cuda-12.9/bin/nvcc",
+  "cuda_home": "/usr/local/cuda-12.9",
+  "connections": 8,
+  "build_dir": "/workspace/Data-5090/SL3061/init-four-arm-20261109-100939-563681/build",
+  "build_jobs": 128,
+  "profile": false,
+  "source_manifest_sha256": "f4f2ab265a356b3bf2fa52f06cdefa98b4f8a10166046eef68e6cd7b91ee2657",
+  "backend": "flux-cutlass-dp-ready-nccl-v1",
+  "runtime_environment": {
+    "NCCL_VERSION": "2.27.3",
+    "TORCH_NCCL_USE_COMM_NONBLOCKING": "0",
+    "NCCL_P2P_DISABLE": "1",
+    "NCCL_SHM_DISABLE": "0",
+    "NCCL_NVLS_ENABLE": "0",
+    "CUDA_DEVICE_MAX_CONNECTIONS": "8",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "CUDA_HOME": "/usr/local/cuda-12.9"
+  },
+  "calibration": {
+    "warmup": 2,
+    "iterations": 5,
+    "training_pairs": 3,
+    "confirmation_pairs": 3,
+    "min_gain": 0.002
+  },
+  "execution_plan": {
+    "schema": "rtx5090-arrival-plan-v1",
+    "world_size": 8,
+    "transport_lanes": 2,
+    "roles": {
+      "attn": {
+        "shape": [
+          2048,
+          4096,
+          512
+        ],
+        "chunk_rows": 128,
+        "arrival_order": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15
+        ],
+        "diagnostics": {
+          "method": "same-codec-paired-full-flux-projection-v1",
+          "settings": {
+            "warmup": 2,
+            "iterations": 5,
+            "training_pairs": 3,
+            "confirmation_pairs": 3,
+            "min_gain": 0.002
+          },
+          "arrival": {
+            "selected_candidate": "identity",
+            "proposed_candidate": "reverse_odd",
+            "accepted": false,
+            "identity_fallback": true,
+            "training_candidates": [
+              {
+                "name": "reverse_all",
+                "phase": "arrival_training",
+                "paired_samples": [
+                  {
+                    "pair": 0,
+                    "seed": 8001234,
+                    "execution_order": [
+                      "reference",
+                      "candidate"
+                    ],
+                    "reference_seconds": 0.012418115045875311,
+                    "candidate_seconds": 0.016833415254950523,
+                    "fractional_gain": -0.35555317314778456
+                  },
+                  {
+                    "pair": 1,
+                    "seed": 8001235,
+                    "execution_order": [
+                      "candidate",
+                      "reference"
+                    ],
+                    "reference_seconds": 0.013905972708016634,
+                    "candidate_seconds": 0.014515954069793224,
+                    "fractional_gain": -0.04386470292904732
+                  },
+                  {
+                    "pair": 2,
+                    "seed": 8001236,
+                    "execution_order": [
+                      "reference",
+                      "candidate"
+                    ],
+                    "reference_seconds": 0.013152010273188353,
+                    "candidate_seconds": 0.016933215782046318,
+                    "fractional_gain": -0.28750019429093054
+                  }
+                ],
+                "fractional_gain": -0.22133843570185396,
+                "worst_pair_gain": -0.35555317314778456,
+                "candidate_digest": "946704bde68788bf0b48d916cd982016aab2feb535f5d2d4462a05002c19d6a5",
+                "reference_digest": "17310a40be71ff0e1ffd504a8c6a7832c4470ce045da7a7448e8f6144aced2c1"
+              },
+              {
+                "name": "reverse_odd",
+                "phase": "arrival_training",
+                "paired_samples": [
+                  {
+                    "pair": 0,
+                    "seed": 8001234,
+                    "execution_order": [
+                      "reference",
+                      "candidate"
+                    ],
+                    "reference_seconds": 0.014173971954733133,
+                    "candidate_seconds": 0.015898960642516613,
+                    "fractional_gain": -0.12170115005818483
+                  },
+                  {
+                    "pair": 1,
+                    "seed": 8001235,
+                    "execution_order": [
+                      "candidate",
+                      "reference"
+                    ],
+                    "reference_seconds": 0.015203867107629776,
+                    "candidate_seconds": 0.013579851016402245,
+                    "fractional_gain": 0.10681598830948402
+                  },
+                  {
+                    "pair": 2,
+                    "seed": 8001236,
+                    "execution_order": [
+                      "reference",
+                      "candidate"
+                    ],
+                    "reference_seconds": 0.021669291891157627,
+                    "candidate_seconds": 0.01605673599988222,
+                    "fractional_gain": 0.259009658435847
+                  }
+                ],
+                "fractional_gain": 0.09452412382274389,
+                "worst_pair_gain": -0.12170115005818483,
+                "candidate_digest": "dcefdb96fda82789f67a9156be2f146926cd315b5ef9ddc437dd3792fe9b7a5c",
+                "reference_digest": "17310a40be71ff0e1ffd504a8c6a7832c4470ce045da7a7448e8f6144aced2c1"
+              },
+              {
+                "name": "reverse_even",
+                "phase": "arrival_training",
+                "paired_samples": [
+                  {
+                    "pair": 0,
+                    "seed": 8001234,
+                    "execution_order": [
+                      "reference",
+                      "candidate"
+                    ],
+                    "reference_seconds": 0.014465167187154293,
+                    "candidate_seconds": 0.021526558324694633,
+                    "fractional_gain": -0.4881651934041362
+                  },
+                  {
+                    "pair": 1,
+                    "seed": 8001235,
+                    "execution_order": [
+                      "candidate",
+                      "reference"
+                    ],
+                    "reference_seconds": 0.015706601087003946,
+                    "candidate_seconds": 0.015935345087200403,
+                    "fractional_gain": -0.014563558272688626
+                  },
+                  {
+                    "pair": 2,
+                    "seed": 8001236,
+                    "execution_order": [
+                      "reference",
+                      "candidate"
+                    ],
+                    "reference_seconds": 0.014783798716962337,
+                    "candidate_seconds": 0.014544070232659578,
+                    "fractional_gain": 0.016215621498397725
+                  }
+                ],
+                "fractional_gain": -0.14097669697583748,
+                "worst_pair_gain": -0.4881651934041362,
+                "candidate_digest": "f3388838022ff189b8e49c01c8f44d29b31dd49b8416927590b10bef0e521df3",
+                "reference_digest": "17310a40be71ff0e1ffd504a8c6a7832c4470ce045da7a7448e8f6144aced2c1"
+              }
+            ],
+            "confirmation": {
+              "name": "reverse_odd",
+              "phase": "arrival_confirmation",
+              "paired_samples": [
+                {
+                  "pair": 0,
+                  "seed": 9001234,
+                  "execution_order": [
+                    "reference",
+                    "candidate"
+                  ],
+                  "reference_seconds": 0.013336592819541693,
+                  "candidate_seconds": 0.012702155858278275,
+                  "fractional_gain": 0.047571142783469966
+                },
+                {
+                  "pair": 1,
+                  "seed": 9001235,
+                  "execution_order": [
+                    "candidate",
+                    "reference"
+                  ],
+                  "reference_seconds": 0.013594165910035372,
+                  "candidate_seconds": 0.013216875027865171,
+                  "fractional_gain": 0.02775388241301957
+                },
+                {
+                  "pair": 2,
+                  "seed": 9001236,
+                  "execution_order": [
+                    "reference",
+                    "candidate"
+                  ],
+                  "reference_seconds": 0.013087959960103035,
+                  "candidate_seconds": 0.01405427698045969,
+                  "fractional_gain": -0.0738325165497411
+                }
+              ],
+              "fractional_gain": 0.0018822677188463643,
+              "worst_pair_gain": -0.0738325165497411,
+              "candidate_digest": "dcefdb96fda82789f67a9156be2f146926cd315b5ef9ddc437dd3792fe9b7a5c",
+              "reference_digest": "17310a40be71ff0e1ffd504a8c6a7832c4470ce045da7a7448e8f6144aced2c1"
+            },
+            "changed_slots": 0
+          },
+          "limitation": "Role-shape calibration of full Flux GEMM and communication; not a layer-specific or full-step performance guarantee."
+        }
+      },
+      "mlp": {
+        "shape": [
+          2048,
+          4096,
+          2048
+        ],
+        "chunk_rows": 128,
+        "arrival_order": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15
+        ],
+        "diagnostics": {
+          "method": "same-codec-paired-full-flux-projection-v1",
+          "settings": {
+            "warmup": 2,
+            "iterations": 5,
+            "training_pairs": 3,
+            "confirmation_pairs": 3,
+            "min_gain": 0.002
+          },
+          "arrival": {
+            "selected_candidate": "identity",
+            "proposed_candidate": "reverse_all",
+            "accepted": false,
+            "identity_fallback": true,
+            "training_candidates": [
+              {
+                "name": "reverse_all",
+                "phase": "arrival_training",
+                "paired_samples": [
+                  {
+                    "pair": 0,
+                    "seed": 18001234,
+                    "execution_order": [
+                      "reference",
+                      "candidate"
+                    ],
+                    "reference_seconds": 0.013123213779181242,
+                    "candidate_seconds": 0.012804786209017038,
+                    "fractional_gain": 0.02426445042519687
+                  },
+                  {
+                    "pair": 1,
+                    "seed": 18001235,
+                    "execution_order": [
+                      "candidate",
+                      "reference"
+                    ],
+                    "reference_seconds": 0.013551035895943642,
+                    "candidate_seconds": 0.013364350888878107,
+                    "fractional_gain": 0.013776438089239895
+                  },
+                  {
+                    "pair": 2,
+                    "seed": 18001236,
+                    "execution_order": [
+                      "reference",
+                      "candidate"
+                    ],
+                    "reference_seconds": 0.01613156870007515,
+                    "candidate_seconds": 0.014398810919374228,
+                    "fractional_gain": 0.10741409052752882
+                  }
+                ],
+                "fractional_gain": 0.0494261933880743,
+                "worst_pair_gain": 0.013776438089239895,
+                "candidate_digest": "87d176e5865ecfd2a72eb207786d865c0567d6acfcd44e9b4fe8dddaae774d4c",
+                "reference_digest": "bac6cbab83937cc55bd277c99084079c58a3bd3d00bc7b73d8f268e3a5bf95b4"
+              },
+              {
+                "name": "reverse_odd",
+                "phase": "arrival_training",
+                "paired_samples": [
+                  {
+                    "pair": 0,
+                    "seed": 18001234,
+                    "execution_order": [
+                      "reference",
+                      "candidate"
+                    ],
+                    "reference_seconds": 0.014037633780390024,
+                    "candidate_seconds": 0.012457564938813448,
+                    "fractional_gain": 0.11255948590024234
+                  },
+                  {
+                    "pair": 1,
+                    "seed": 18001235,
+                    "execution_order": [
+                      "candidate",
+                      "reference"
+                    ],
+                    "reference_seconds": 0.01292791124433279,
+                    "candidate_seconds": 0.013616316020488739,
+                    "fractional_gain": -0.05324949739717044
+                  },
+                  {
+                    "pair": 2,
+                    "seed": 18001236,
+                    "execution_order": [
+                      "reference",
+                      "candidate"
+                    ],
+                    "reference_seconds": 0.013527944218367338,
+                    "candidate_seconds": 0.013501343782991171,
+                    "fractional_gain": 0.0019663324261827153
+                  }
+                ],
+                "fractional_gain": 0.02290100174231635,
+                "worst_pair_gain": -0.05324949739717044,
+                "candidate_digest": "daa953ffb1a246ebeb110f4649a9cc20d6479eb06bf9cbf767ba33309afc67c2",
+                "reference_digest": "bac6cbab83937cc55bd277c99084079c58a3bd3d00bc7b73d8f268e3a5bf95b4"
+              },
+              {
+                "name": "reverse_even",
+                "phase": "arrival_training",
+                "paired_samples": [
+                  {
+                    "pair": 0,
+                    "seed": 18001234,
+                    "execution_order": [
+                      "reference",
+                      "candidate"
+                    ],
+                    "reference_seconds": 0.014301038812845945,
+                    "candidate_seconds": 0.015220358967781067,
+                    "fractional_gain": -0.06428345289919357
+                  },
+                  {
+                    "pair": 1,
+                    "seed": 18001235,
+                    "execution_order": [
+                      "candidate",
+                      "reference"
+                    ],
+                    "reference_seconds": 0.017642891965806484,
+                    "candidate_seconds": 0.022272597067058086,
+                    "fractional_gain": -0.26241191694787847
+                  },
+                  {
+                    "pair": 2,
+                    "seed": 18001236,
+                    "execution_order": [
+                      "reference",
+                      "candidate"
+                    ],
+                    "reference_seconds": 0.014138737693428993,
+                    "candidate_seconds": 0.013724705204367638,
+                    "fractional_gain": 0.02928355402291527
+                  }
+                ],
+                "fractional_gain": -0.09257248961201947,
+                "worst_pair_gain": -0.26241191694787847,
+                "candidate_digest": "a187048d816636423ba410ea7aff0a5140958c9d30345e0aca602bb15e64386c",
+                "reference_digest": "bac6cbab83937cc55bd277c99084079c58a3bd3d00bc7b73d8f268e3a5bf95b4"
+              }
+            ],
+            "confirmation": {
+              "name": "reverse_all",
+              "phase": "arrival_confirmation",
+              "paired_samples": [
+                {
+                  "pair": 0,
+                  "seed": 19001234,
+                  "execution_order": [
+                    "reference",
+                    "candidate"
+                  ],
+                  "reference_seconds": 0.014867036137729883,
+                  "candidate_seconds": 0.012400371953845024,
+                  "fractional_gain": 0.16591499213652317
+                },
+                {
+                  "pair": 1,
+                  "seed": 19001235,
+                  "execution_order": [
+                    "candidate",
+                    "reference"
+                  ],
+                  "reference_seconds": 0.01258218614384532,
+                  "candidate_seconds": 0.012720602098852396,
+                  "fractional_gain": -0.011000946371691134
+                },
+                {
+                  "pair": 2,
+                  "seed": 19001236,
+                  "execution_order": [
+                    "reference",
+                    "candidate"
+                  ],
+                  "reference_seconds": 0.012531728018075228,
+                  "candidate_seconds": 0.013601939659565687,
+                  "fractional_gain": -0.08540016508073212
+                }
+              ],
+              "fractional_gain": 0.029078942650933026,
+              "worst_pair_gain": -0.08540016508073212,
+              "candidate_digest": "87d176e5865ecfd2a72eb207786d865c0567d6acfcd44e9b4fe8dddaae774d4c",
+              "reference_digest": "bac6cbab83937cc55bd277c99084079c58a3bd3d00bc7b73d8f268e3a5bf95b4"
+            },
+            "changed_slots": 0
+          },
+          "limitation": "Role-shape calibration of full Flux GEMM and communication; not a layer-specific or full-step performance guarantee."
+        }
+      }
+    }
+  },
+  "execution_plan_sha256": "cd6301fb2a7c6f61778c4004fd70c746400d32e4ba4b6b33a0b3cc63d3e370b0",
+  "job": {
+    "stage": "operator",
+    "arm": "flux_taco_interleaved",
+    "trial": 1,
+    "block": 7,
+    "index": 30,
+    "directory": "operator/trial1/block007-flux_taco_interleaved"
+  }
+}

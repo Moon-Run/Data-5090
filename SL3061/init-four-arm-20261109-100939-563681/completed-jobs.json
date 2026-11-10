@@ -1,0 +1,1390 @@
+[
+  {
+    "job": {
+      "stage": "preflight",
+      "arm": "flux",
+      "trial": 0,
+      "block": 0,
+      "index": 0,
+      "directory": "preflight"
+    },
+    "command_sha256": "eff289fa53cd9028f59b1894974c62f73393f2f60edaecb639960bb603f88846",
+    "rank_sha256": {
+      "rank0.json": "826f375567ca1bccbde05e2d83c8cdbb6ee8f4fd421cd1df0f88c4a7aa67a94c",
+      "rank1.json": "7aea0134fa528f009bfff0a274ba59d3f32fb5ab2c35f94532ee6643d8834ce3",
+      "rank2.json": "aafed1962d2a0e39a7be3a6dc24b65fbf174ee7918ade102a21bfe9ff7e93e40",
+      "rank3.json": "25e0a3784685f894b87b70e93976d826ff054aa8e33e9c507233eb6f9d401e0e",
+      "rank4.json": "763de22e04b79cdfdc7f62aba9005701e6b3803b945a3e6e43a890c9a78f1209",
+      "rank5.json": "0e989a054ba525edc7771bf7fdcaa283fcf0857ce8af78b8d07612ab5bbc8ad2",
+      "rank6.json": "dda8cf2df3f84b5b9c66882b54fc44e485c0fa3bbd1a4258178bc72f3522dcab",
+      "rank7.json": "b5641686f4ce47d8ddf3f8dccc804313f4173a7704b747960584a5fc9a710e8a"
+    }
+  },
+  {
+    "job": {
+      "stage": "calibrate",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 0,
+      "block": 0,
+      "index": 1,
+      "directory": "calibrate"
+    },
+    "command_sha256": "22efdfe4eb66da7be85b83115a4f67cb9a5176811a4343a69edeac4c66bbaa70",
+    "rank_sha256": {
+      "rank0.json": "8944fb826449715079ea72fdba989ecd26239beddc68735ee57567e3f9bdd00f",
+      "rank1.json": "ae97431ae616c174dc58c41ac005352c78bb2fab8e197866776ffd2ec9865f95",
+      "rank2.json": "9dda061f33929dbf6e6e1497306810a5c2021c46cb4ce24954b201452ef01e89",
+      "rank3.json": "502ef28b087ef6e0f4c167321025f20bb8cc55670cb3ba1173310a793e594c57",
+      "rank4.json": "457122fb84c37e39c902bcbb7b63905e91652546ddf4303ec8092aa2be66038b",
+      "rank5.json": "8aa1ea354d0c234017a353747f2e299333ee0150c2513b1596be00c32f4a34de",
+      "rank6.json": "708211eb592709316a73ec0168c39a563dadd3b7af2b62c1a42677cc9e02ce60",
+      "rank7.json": "69b95b07a4391a1e9663be15ca10c30377b64547bf6ba263e997590ab6d26a21"
+    },
+    "execution_plan_sha256": "cd6301fb2a7c6f61778c4004fd70c746400d32e4ba4b6b33a0b3cc63d3e370b0",
+    "arrival_plan_file_sha256": "cc1502f42757e6052a384c55ea70b664a71a00f1cc5fe8b1779d600a9615abee"
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux",
+      "trial": 1,
+      "block": 0,
+      "index": 2,
+      "directory": "operator/trial1/block000-flux"
+    },
+    "command_sha256": "a8cc909d7f7f6212bc8ab2fdc1bb73e1dfa8776ab3ad0a5680ff88d003df984b",
+    "rank_sha256": {
+      "rank0.json": "738a06635eaf1471c20b99b1622709f03bc7dcabcec1db64d9faa298c428ce06",
+      "rank1.json": "46309c40392e3beb51aeebc7f323efaa4971242de5e1bf2877b5de3abb86e9e3",
+      "rank2.json": "041e7adf53d76c55390125c493949a026ebfe5c23f21de3f22a101c372ec4446",
+      "rank3.json": "3dac22d4513630bdfac9aef0ca100277203cdc0d8643a217ce8b8bb308a470f6",
+      "rank4.json": "1bcc82ffa1b1377312ad8fe2205b7480dcd031f408031a9ca58a62a651182d5e",
+      "rank5.json": "6ab841eefc8070bb422ca094b492596511f7425a3c3856e2b2318be1fcbb2ecb",
+      "rank6.json": "fb430684227de081be380829f0e3701be13ab2e9b208f49c4a25185e09c02aaf",
+      "rank7.json": "dce660e28f9784a2660fca478bb33186e5a584bc8b2c42eeeff41b546f33412a"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 0,
+      "index": 3,
+      "directory": "operator/trial1/block000-flux_taco"
+    },
+    "command_sha256": "2b5946db90efebde2b1e069ab2ec19739f228aa69228650963a6b01e30bcd865",
+    "rank_sha256": {
+      "rank0.json": "106e57e8429b82daefd962a6529a83766371333b89aa547fd690b1866371b3f9",
+      "rank1.json": "e45e8517c4c2137a6f8714dc4cf8a49f1d67a8b28f64b0bbc55f7c09d625e359",
+      "rank2.json": "457e77722fa5c3cca41c3fc83a62701418df5f983b1995b3cf9d0d0bf175d98d",
+      "rank3.json": "61f6c3dd75ae92b8a286d424011acd0b16754ad41d3997f8769244d97388c01a",
+      "rank4.json": "039bbf5ab0d8280ff912d6575d8ae695405297702519c92c0e7970636172ac4c",
+      "rank5.json": "28fe386f11fb2272378f49060d09cc70e167f81c49c41679af11a43cb7d7eaf9",
+      "rank6.json": "07c2d83b0da2eefdcfde88ab6f4607c0577b5b7eaf59ae821502743daab0a097",
+      "rank7.json": "254c420ff55dce10d29b90e60a5bb2632c5c5e0c0a76d10c0ba4318c2264afe0"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 0,
+      "index": 4,
+      "directory": "operator/trial1/block000-flux_taco_interleaved"
+    },
+    "command_sha256": "bd98049ed4e71adbc7ab76da55b76cbe4408439d69ab72520882ede00e107ee2",
+    "rank_sha256": {
+      "rank0.json": "47772f4a50cefa57b8b62721a0e90ed030b601c22be55802381dfd2d5d22b35f",
+      "rank1.json": "7f3eec0b1566aa624cff2b7e3855302f10357137cf8d0bde0334ea3b9703e4f5",
+      "rank2.json": "f155dfea9630994904994b1be71f4887d0177c98ab36746fd97956e9a0b52db4",
+      "rank3.json": "40c76ffe3bf4ae20a45e0fec82d1e3434d2f716561d7e1ca681b0adf728a3587",
+      "rank4.json": "aeac516527b2eddc252c07abdbcbdd0cb39d73f8832c14440a4fcbf78a72f412",
+      "rank5.json": "e46521cc7f5ef6756e6795c68beaeb28758f6ebb8794175be1b7e84177ddb47f",
+      "rank6.json": "2f8bc1ab24ad5aef2f3bc81fdc667049fcabaa57aa06510c5bf8f72a48fb125d",
+      "rank7.json": "be3f5dbb1065bfb077bb4bcaf8189649e5025b478f2a6f5eb5ce7fae1d3c26e6"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 0,
+      "index": 5,
+      "directory": "operator/trial1/block000-flux_taco_interleaved_arrival"
+    },
+    "command_sha256": "fb9184057377fe9dea6a61b7bc129ad395a2df4edee9c4505583cb610f3c6478",
+    "rank_sha256": {
+      "rank0.json": "d6f0017d7d51d4d89dd855ed2ec92068a66c02928be23408d8415855858c9f9f",
+      "rank1.json": "d2c130262435867ae557791171b5daeeff5c2f920c72065996e4ece23ef5035f",
+      "rank2.json": "5700d735ceb48e32ec6146c0f03cedb9593e0ddc41129cc08e65c8565476bed4",
+      "rank3.json": "0464e6383455adb82086de640abd70617a8c4b8ba9776b3f095b2f0df45458b6",
+      "rank4.json": "d4195a43526dcb76f5b61178a9e3507d12948b00cb8223de7d9d559209a74083",
+      "rank5.json": "13b81d33f4cb815331237c855b2456b0ae4ae2c82c4877c46a519ae062fab754",
+      "rank6.json": "bb6434c6df4abdb0cc128575e01bbe88a99021f16c8f21ac47f97bf51babc58c",
+      "rank7.json": "536f6465572e130e932ced1abcd851b9856c20fb228df9cded738b9d8ddc5cb7"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 1,
+      "index": 6,
+      "directory": "operator/trial1/block001-flux_taco"
+    },
+    "command_sha256": "24659859ad8277a41309f5be3322fb506b1ee6cd4e660465478c965f672d1596",
+    "rank_sha256": {
+      "rank0.json": "f966d8f45ad01b0632d3468fc460f38dea7f7a7223fa345064826015c48e102f",
+      "rank1.json": "e767a5e27a47841193d2289e4d37234641ee2dd24a24da9295dd3a7cedd0e0c8",
+      "rank2.json": "96e94c400e4c7fe8dc4297803c1724e787073f16b6b92481bbd8a4028195c596",
+      "rank3.json": "fab810e825a237201ce6d079e63c0e03d70aad863ed53aa383da6303cdfd9790",
+      "rank4.json": "51e465f2d6ff5af9ea43ec7d6fe0dd06162c2e73fcf8810270f961a961a08312",
+      "rank5.json": "78bf098abb0488abb81cdb61a6e235e093cbca24f657aac907d3180085de60e1",
+      "rank6.json": "851c10a111151c76fc4444ce0b7d150f6499ddc18955e5063b1904d87b0dc4ce",
+      "rank7.json": "eb940c6edbc5ecfad992aa542838ae0ed3bec75b66fb50077ebb1b82fc5a8e53"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 1,
+      "index": 7,
+      "directory": "operator/trial1/block001-flux_taco_interleaved"
+    },
+    "command_sha256": "b5f680722edfb7ee96989897381c95c12289ce20f56de0c5815590eb3eefb24c",
+    "rank_sha256": {
+      "rank0.json": "26403c65fa6cfda5bed6c1204ef4be7389c6417bef30ca1e10e4466f11e6bb95",
+      "rank1.json": "bba863bd087923c06af8683d8c4432207e43e0bb125324e9437f30e8d177550d",
+      "rank2.json": "86229e717ff5d8e319d6800eed184de6117f9cb42421edeb02b5a68e5e0c7c9f",
+      "rank3.json": "388deff6e9bf2ea57a84b7d484d87629d8b893fa8851d20ee1eacda51ceae745",
+      "rank4.json": "2cdcda12dd69c662c51dd70d2b2409359f8ff0323813a7b5cbc0be4378929594",
+      "rank5.json": "b489b23801f8813a6444c6a58a726e167e587dbbf65af2c7a0b3fda399f77168",
+      "rank6.json": "c121b149980e6df3f95c36cf5af3a22465ee640a09d4dd4e89729e87d6fb8380",
+      "rank7.json": "0e585c1c31495708aefed7ce49f686c55e12400347b0e178df7253a7e41a3438"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 1,
+      "index": 8,
+      "directory": "operator/trial1/block001-flux_taco_interleaved_arrival"
+    },
+    "command_sha256": "22f6890125cfe9a0b32658e2fbfe062dd0c20fa5127fab388c3169e19a38e125",
+    "rank_sha256": {
+      "rank0.json": "724097007b9fbd600ba13efe070929697be5ade6376ec14a7c9365c7dc09771d",
+      "rank1.json": "3b272ca1a049516ae6ee11b1795ce284828e65d8b2db9bf3d6bbba7625b52e79",
+      "rank2.json": "f013c13e57a64da5ae17b18c6be456d1b6530071fe79e5e2c6450232d0c9223a",
+      "rank3.json": "f3de7060ab58450af119d43a084f30e1eb73d96eee4a09ef0985082e117e7ed5",
+      "rank4.json": "5f0153bd8d24720e4d995c200f843c00621851f0c6a0495766980b62683adeca",
+      "rank5.json": "2f6755526b8e1843846776f6f1f75077d89b72ee17bdf9137f00c6eb48076372",
+      "rank6.json": "5dabd048cb8e24656dbe5f6efaefa4b244bae8ae41b3ba15b9347be69fc95980",
+      "rank7.json": "b7160135c47de127f3679310e724860a305c6ec53f07f43fa2e1c40f24bf5e7c"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux",
+      "trial": 1,
+      "block": 1,
+      "index": 9,
+      "directory": "operator/trial1/block001-flux"
+    },
+    "command_sha256": "380340032809caef4703d2b4b0b76e10c08cb1c5c0cb0ae1096b7c00f846024c",
+    "rank_sha256": {
+      "rank0.json": "9517b2c600d3e5b72ca73210da346cdf1db6c3d9f0cd458e6decb36dbb1fe74e",
+      "rank1.json": "57c3216a3831d3ec6036f6eed0e0837859ad0d3a742fa6ea4b35f6a7aaabc323",
+      "rank2.json": "d992443237fba6b4f1882631f9aa45a7efe79ae87c85f3f137724412a3cf492f",
+      "rank3.json": "46a47475b022a470be7d42044efb522ddde367f05b5d82418064a4317688a542",
+      "rank4.json": "6574c9e4b979e320b1c0bf5cd3130dcecd358104f036743c4d1426a82878e141",
+      "rank5.json": "59e1bbade3402a31ac780487dad97524d617210713cd6752472e8e4441bdb69f",
+      "rank6.json": "56b374754a40212533992339263acfa21f2467d3491dab24cfe5c6dc4c9a1f68",
+      "rank7.json": "f72fc47b2643f2e2944f335d96ade0dfce7f089241c63829ba39b43d675e97ce"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 2,
+      "index": 10,
+      "directory": "operator/trial1/block002-flux_taco_interleaved"
+    },
+    "command_sha256": "bed179e2d8432b25fc0a6998d02ee400dde415688b7869b5fbe75dc2037108cb",
+    "rank_sha256": {
+      "rank0.json": "0f7d363f3da678ba406a2709828b1b98b53cd0febf4a7dca025a43c47a48b8a7",
+      "rank1.json": "f5653b4e486cc6928b67f53d9e8f2c05c3e053138a46cad5a089bd0eb50b0922",
+      "rank2.json": "33f2dff37946716b3ad938bfc971d07d3df1b693d0c53b2383105dc2303bdaf5",
+      "rank3.json": "51933c80eb7464d3f7ca65cc7f5ff4153f410b4ec8177b2a2724090506f0972d",
+      "rank4.json": "80990cf780e01ac5f595989fbe387ee11c4c8ebedcdfe92b304be3dfbc0e6898",
+      "rank5.json": "29b98da12da891d27e5c71f17327b5851f7100d0c60f8f0359642fbd0f18b3cd",
+      "rank6.json": "c7b9f8826bd7474b993b35040508a7f143f3f492bf984e9117aeefe0f3d779b7",
+      "rank7.json": "0adaba535724a8c9cb2916e4522a3dff6605e22ecc154022f45d0dc61e2db177"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 2,
+      "index": 11,
+      "directory": "operator/trial1/block002-flux_taco_interleaved_arrival"
+    },
+    "command_sha256": "9fa4c4263dfab83138d3e4b91f3fbb0213be3f79b113b49c9fd1e2f82d187337",
+    "rank_sha256": {
+      "rank0.json": "1a337368e13a1d360d1db566ffca907a46cd5aeb5f67641bd11d0308d83565ab",
+      "rank1.json": "8819704e99b44c17413b33864d401e5a0a0adb45a19200aaa7dfccbca5598590",
+      "rank2.json": "cc944e0f9e9aaabf32d3019949a91124bab52cb0f9de2bfb2b921a09fe7d33ae",
+      "rank3.json": "5a051fd2dca83c7a34e8fcd2980806a40e667a0c04282e39a6d98b38a7f2edf3",
+      "rank4.json": "f13d953617b12817761e6578acf846e9d5a841391ba0f16cf535a86d44b9e9a3",
+      "rank5.json": "ec6970fac08943ed4fde5d76ad709549193a204215611f94005ef3e69be63f7d",
+      "rank6.json": "5f416b5274723383a138a9a00abdee62a37cd20721026504ffe87bb19ab575bf",
+      "rank7.json": "bc74461c2cc1ae0e06ea0d3f38f17e6fabd28cfeca158792e04cebaba2663463"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux",
+      "trial": 1,
+      "block": 2,
+      "index": 12,
+      "directory": "operator/trial1/block002-flux"
+    },
+    "command_sha256": "8222c02d88c96928bcf09c6be84691ab4115fcc354541d7e0fc82f909a89ba1f",
+    "rank_sha256": {
+      "rank0.json": "2d8bf131b709f4d061794bdb2c6b1b21ff66f37dcfbb34249daec4a133a3ac12",
+      "rank1.json": "d9d3a858f9b24882596f41366221463072538e225ab3b1f1e459cf4cfbff1bad",
+      "rank2.json": "e5cae747956e325de0e7a7522c1f055d219efc7b8eae92ca3faf80703f6e8929",
+      "rank3.json": "3d98402a11eba3976eaa5cd4e757cc1d49b715b15c2a6e70ad82367447ffd9da",
+      "rank4.json": "1f1914306ac8eeb9d709c39a10728ba414d1902245c51856ce0b86a92758127d",
+      "rank5.json": "6608ead78a20b4de71e937178aa720257a731cd098a184aa9e646f31c27d8d22",
+      "rank6.json": "10a2a4fcc8971355aad0d22cf512358d66a3497b36c4d89c7ee5e6af01f1cbfd",
+      "rank7.json": "39c4f8cce19f388d65d72bc47b168c6b043f8bf0c8d725976490853670266314"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 2,
+      "index": 13,
+      "directory": "operator/trial1/block002-flux_taco"
+    },
+    "command_sha256": "f3efffe43985711b6dbdd1977b6dbe2e62ebc2ff61d81ab2cd8f8a1ff53b6e37",
+    "rank_sha256": {
+      "rank0.json": "85839e72afd21af4dcf97ef48c3569de85f0ddddb215b0e3d4dbf4d56fb8c461",
+      "rank1.json": "0e162c7f4fd3a505c6476d8c3154325438504966867eaa92e68211686765d328",
+      "rank2.json": "40df46ab2aa6f5945b9f815a28cd6a9ac8ef660e0eb65e2b2f90121c0cd008ed",
+      "rank3.json": "97734807975704a6fe58a18c965cb1f6256614ebc6b5384782dd6316f99ae78c",
+      "rank4.json": "722d2e1c0b4a99253ad48fac92287ae35b49f421ba8caec7bfe57c7d3fc4edc1",
+      "rank5.json": "1a6e904a95bf5ebe1089b428a1002ccc3e771f4dc8224d98d98acbb8b19df939",
+      "rank6.json": "3a341bd901e899133e81d087af02a0dfabd705c013f0ef48b9fa96174ccce003",
+      "rank7.json": "efed8f4b476a954054278e8d612ccf4981ccbe36bd35c4c4d79685eaee1fe929"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 3,
+      "index": 14,
+      "directory": "operator/trial1/block003-flux_taco_interleaved_arrival"
+    },
+    "command_sha256": "0c959632626e430769a70b66a4526b7846722f112973e7d6b586498d413c767c",
+    "rank_sha256": {
+      "rank0.json": "5970cab37d52c0c5f9814c2427fe344972f0a94c1856278413c4c283f8cba6f8",
+      "rank1.json": "083b1bd8e59ea6106189cd6a784510ab4bf6b79dbc569a4b98262231e371b8c5",
+      "rank2.json": "f70b75069de0db5fc03d55062f8a39556640b63e19044e8707edb3c64b54ca8e",
+      "rank3.json": "6dc277e2cf7349375e62b07f8f23ac5084c3b8949c648ecb104efed54bac3011",
+      "rank4.json": "9a3de33b2d5cf9f56a87d61c62486579073e7a8cf5f2f5d8a37c8214ab7b61aa",
+      "rank5.json": "15795bb95e30f5a4089be570becaf64fdb24681f5ffb6d65410270f288baa06a",
+      "rank6.json": "8c174d611a80b7cb7dd15aec05ce9fce8d6266b688890570522146ce5939db21",
+      "rank7.json": "00330b1d2aed701f0ecb4f8dbdc9f4da0aad812caf97655b090284d41fb8ecd8"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux",
+      "trial": 1,
+      "block": 3,
+      "index": 15,
+      "directory": "operator/trial1/block003-flux"
+    },
+    "command_sha256": "1040ce8ad69e5834fd4269630692ffec6302c37a69cc2637de8a747f4029d3ed",
+    "rank_sha256": {
+      "rank0.json": "5c8094714c5da08f4df1b3345b6bd71b788a8a4f8d5f04d26ca76f06a2d6adbf",
+      "rank1.json": "63e2d0d20b543fffa844c4dd53de87fbc39b46c248e712cc455fbe75164c67aa",
+      "rank2.json": "aa656ea7b23b15c644db69d007b6c2bdef3d230c87a80657f4effbd244cced0f",
+      "rank3.json": "a94964e57e6d2d367a96231af295102c15b6eb32852a0108bcf5b4508d06eb8e",
+      "rank4.json": "867b5695deafefe3eebccccbeebaa90c7ca9f18bc0966a3a028ec6208d2ff66d",
+      "rank5.json": "6e519ada885875269d4a283db47ea482931493c701ff0916e48bb5b4b58fa5ee",
+      "rank6.json": "ea3e0fbda4b00c42e7a53f7870993e8004a337321a81b6e21adf7878dc3b7e00",
+      "rank7.json": "4199ba4e0fa6c445503d3f514ceca9d551536ced474fae81ff0e05fa6cf872f3"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 3,
+      "index": 16,
+      "directory": "operator/trial1/block003-flux_taco"
+    },
+    "command_sha256": "1f6eaf833fb24399ceb59becc768e9feedcf4b78bdd28f18a365256afd544469",
+    "rank_sha256": {
+      "rank0.json": "46a1b159d032b4ed036e49f6dc40eb6b51ab17e5c9739c92449f381d943e4302",
+      "rank1.json": "cfd2bf3827b5f21e6bd6029951412c5b94afcc821b0248a792c44a5e24fa4380",
+      "rank2.json": "5b585092fd11321aa490e5f0752cf6c33e0b4b07cdac80065a2cafb4f43a44e3",
+      "rank3.json": "1a9e16ad977379c6e9990f95218bbcc963d5d91f1b966b33636787ad34aad03a",
+      "rank4.json": "e3f151de583e2ff751efcc9f0a6b0edd987e031ded0ad17771b8e40ce2b626a0",
+      "rank5.json": "e29ba1be9e8428c658dd4fa4ad543c031392e0b1c47864d15547b6a65214cfcd",
+      "rank6.json": "98315b20302e1dd4e94c803242d546c2b4ba29ca3b84303a16f08928e2cf1d75",
+      "rank7.json": "28a8956ae2f091bdd2936ee6be44b532347697514c905f8a7ce9feabbabca9aa"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 3,
+      "index": 17,
+      "directory": "operator/trial1/block003-flux_taco_interleaved"
+    },
+    "command_sha256": "feb6e593f4efa02ba8f409c9eef2eac6d4f572b1e677db4d3ff58e5765692161",
+    "rank_sha256": {
+      "rank0.json": "939a7a73816f129bbbeab1aef6c944e9e2c8dc19e28ad83f7f1008dda13545e8",
+      "rank1.json": "aae6e1f5a14b270929d06f5c9743bd96a286d7bb27f62cad9a7917989509092f",
+      "rank2.json": "aef15b8d01236339956cfada5ed74c7260a2a41ad3043ce44725edd95f10828c",
+      "rank3.json": "4815db76d33aec7c205dce83bab99d16ae54457b619a3b800c49dbe18c5f22f2",
+      "rank4.json": "0a529bc73c936b51944251d390c80eaa20ed8e903a4c56b63b92f8dd8fe72959",
+      "rank5.json": "fde820a4a0fff392d3ebd19d358f8b5f84ae807a7ff6bf9af1f154bacc2c81be",
+      "rank6.json": "0a68c4db3a28a44828b6e2368e34582c9aaa03fa020908e30a645cd7bf592da7",
+      "rank7.json": "80a82f2701e19c4e6b4a66f2397125f1c49738a545f8e4955e3e30d01662a13a"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 4,
+      "index": 18,
+      "directory": "operator/trial1/block004-flux_taco_interleaved_arrival"
+    },
+    "command_sha256": "dc1f1fe700635af7d1f8739203cc5652d548a0484cc91ca75a8803e1f8436ff9",
+    "rank_sha256": {
+      "rank0.json": "cb50ad3831da8420060e976ed93b4c1b5643259b99a04055c08cacaf0a680363",
+      "rank1.json": "69c23e0a143cbe0ad4cbca271933ff69fd0cd0f5b550bb7f1a32a74fa965efdd",
+      "rank2.json": "53859d57b40b3303695c70523cdbf9d303cb77c909557f86677ccaaf3cb22bc3",
+      "rank3.json": "282d358596c0e7f60392dfa40b6e9ba5145b9d4dd120b3b0ff46057a45cc5dfd",
+      "rank4.json": "f2a1971ded923ca87db03f5e3e1ddcc4aadfadcfb7404103437188423e5eb6b6",
+      "rank5.json": "51661a695fb303e4fa0508b9aa063b221355e7bfc29b3f0de6a45ddd4e501174",
+      "rank6.json": "b50bfb9aadbd28c28a11ca3e8b9cd25c1dde42cc476ee79f9444e696f258fd50",
+      "rank7.json": "b409133aa1416c223f7392588ab1957fc4bb9ddc784d7a513a42cbf4f5a114b7"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 4,
+      "index": 19,
+      "directory": "operator/trial1/block004-flux_taco_interleaved"
+    },
+    "command_sha256": "2b8715ebfc1acba515f56ea2a71b4ace576055eba83ed5be09b90a715f85a98a",
+    "rank_sha256": {
+      "rank0.json": "14af11f7f3672fb3af85419c27b7de6ad9cac77c3cea4098ef2bb7cd320753ee",
+      "rank1.json": "fbfa47d06f8931358247ff8c8b0e876c4fb6bfc5dabf624f7cbf83c3aac76ff9",
+      "rank2.json": "3088f31757760d0abe8a9765f85f11a8baf389dbb0353db391fd67b2083d3385",
+      "rank3.json": "3719bb9b82a4e1ef74840a7f32b994e6f24b7e88aa97b60565a0a614853d0cda",
+      "rank4.json": "df32d093bacebec3f2175340878534ac5c1ca17a728d595b77b9d93487e59377",
+      "rank5.json": "6f359f899f8fe724d0853efbe365ced0c81a78f411f0b5961b7370bc25602ecb",
+      "rank6.json": "1ec1f973872b1e64a1aca60f73a29c4f35fdfd40f5990da8afd180a544ce4b07",
+      "rank7.json": "653c56721fec3ed0e118690e132e56ac22f2859fe0c53493be3e2be8f2617f20"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 4,
+      "index": 20,
+      "directory": "operator/trial1/block004-flux_taco"
+    },
+    "command_sha256": "b86280804b329bb2d97950c8cdd3580fc9fdb7c9b249de0b5ef87fce11145bb3",
+    "rank_sha256": {
+      "rank0.json": "92e10a64d6bfae0d0b39fa411c06357432bddfa6d6de0492c1e04ad66167b957",
+      "rank1.json": "df6ecdf753d98a3c7347dfd87859f255b5f6c63edb9368c93534f90af5a0a92d",
+      "rank2.json": "b4f89202ac4546edc75bde54edfd0f7cc84886c6b4e63291ce882f7ff719d568",
+      "rank3.json": "af0077135962ea9d4edc98bc446afe550e793d1008dcd83d784681d3a1963543",
+      "rank4.json": "57878a629bba1857aeaf20a9cbb70654546fcd09eba94071ef665f765a765ba0",
+      "rank5.json": "8368b2ad34d681ae08d7ac17e94b77f1ae8c6780340e8a17e16e1981abbb2309",
+      "rank6.json": "554ffcc056a92de8d6e83a99796d81e2b1afc80181384abaea13a2f647079537",
+      "rank7.json": "b714e1a51228e8f6a9d5b95b0ac85b09ddb185b382ddf4490b11d445c71447cc"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux",
+      "trial": 1,
+      "block": 4,
+      "index": 21,
+      "directory": "operator/trial1/block004-flux"
+    },
+    "command_sha256": "d0daac44691f180fb835392a0131fdf601480cc95a44c150ef0de2507e4d7adc",
+    "rank_sha256": {
+      "rank0.json": "c5dd3ab41f13ff25490e0c3ea44710985106bafb4b0e3135224ec8c3fab58df7",
+      "rank1.json": "27c6f630bf52dc932886f50a11d417014a4364a6aa2b6c30bbb80d5804739e52",
+      "rank2.json": "2fab414d06dc461dd7f3a4a0f39315d9e32288e61912db23e337384d67c2cbb3",
+      "rank3.json": "c9a3bd86348865384227194543e93224a71185c14a13c158060ca2a1b9ecf616",
+      "rank4.json": "be98bd0a173c9e0424f4c13c5c42db8f1639fbfc8fcc3f3f768f1a5e5a8a7fc3",
+      "rank5.json": "59dcfcc840a786a154b07ffec84df066ba893d9ec9fc67f3029bcab89b81fd3b",
+      "rank6.json": "6c321865a751e2363bca498672e94723ad339a536c1196c4efceb596da2fc1f0",
+      "rank7.json": "2e5c4c12fd91ed3ba8a01408e5dc3c57fbfad944444af888a3b28fdbf2baf234"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux",
+      "trial": 1,
+      "block": 5,
+      "index": 22,
+      "directory": "operator/trial1/block005-flux"
+    },
+    "command_sha256": "7b8ceb3f9b4cbf48059140429c582b27434eb81dbaf86807bfefd1a417bd7d58",
+    "rank_sha256": {
+      "rank0.json": "39a77a2f8212194672c6798d1aa23de064e2e9994d450f47dee79dbc4c706b95",
+      "rank1.json": "589bff011505b1812086ce6974ce505c22c30749c86797696f518e478cc85e1f",
+      "rank2.json": "bfeed44c5e989c22e6c6d73d6bab08d31970354901043923301937bfc4352272",
+      "rank3.json": "35c29011a84eeabcf8e6c47fd8392a26c51dd20362b125f01a1f005ae621f9c3",
+      "rank4.json": "eec0ae08d0c3a8ff1f61197b1d8a1743b38d92e2e77f2aaf5b83b6c2dec66bdd",
+      "rank5.json": "5281ddda99f7c095dad840fd2f5a370f9d73b1e10bcac611740dc3ec07ed4a8f",
+      "rank6.json": "071caaa162cd6098a9151afd3c1f3f8ef331f0aef8ecb79f1d18a22eea7874cc",
+      "rank7.json": "c03d6b2150b81c9c103a02d86831bc97792b4177987eeeb71ef5fa0579954812"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 5,
+      "index": 23,
+      "directory": "operator/trial1/block005-flux_taco_interleaved_arrival"
+    },
+    "command_sha256": "6fdf680bf8158d4456116375b22daad50b401d80d52c300488c04f1279e5a020",
+    "rank_sha256": {
+      "rank0.json": "cffdb64c7b3c8f89c800dbaafdbfae05648409d08367557f6525805e93989791",
+      "rank1.json": "3b1efd90c807b33456806630367e253bf52e5acd5f83e30bcf5d371d375092a8",
+      "rank2.json": "698e227e957f04bad7e60b0f62684cd07700d5a712acbec0c2ee529c1133e1c7",
+      "rank3.json": "b5e56839f61e3514ce4340acea23a0afdbff176f897d40769293a81732d92bf8",
+      "rank4.json": "11652683fd13836324749949937de401b9674a6cdeea368374ba87dd6eccc2d9",
+      "rank5.json": "9f1d3587ff06fc3af05122c67276e58a6cb6586dd1b51155270d0005714e1fb6",
+      "rank6.json": "4e53aa98f739a727d8f8adbf038bdc2397d30d82388232ba0f771d1639f80c18",
+      "rank7.json": "b2aebb0059716b31e0f3aff8ddc05c4889fc3971e0228075702c6fc27c838556"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 5,
+      "index": 24,
+      "directory": "operator/trial1/block005-flux_taco_interleaved"
+    },
+    "command_sha256": "5134c12961a6c36d078a524e1c6a61fe5c821b85ca283424b143d8d9c1cb70fc",
+    "rank_sha256": {
+      "rank0.json": "d4877602729bfb5b73f95860bb82c6eba11fe1ce375685e48ce4712d5ffe01bc",
+      "rank1.json": "0015e8b8a78b2c3a159fe9bc0a5136d9a4f15f36dbab2226193efc63b45fe7b2",
+      "rank2.json": "d8366e10021b08dfb25f9d850a6f3a79a3a99a4dcef293c4a23074081b83cc2d",
+      "rank3.json": "0c361323e7cf56f0c25b96ef2253f0d9c104b7574e63cdcd33bc73fc1955c832",
+      "rank4.json": "f4fe048d7fc43308295a25d5a6ca578413b70c36886b3716b2945c72b03afbf1",
+      "rank5.json": "015031edaa7e833458837fca01711fa6f90523f370cdfbbb5e0b0b4ab3277e35",
+      "rank6.json": "bc61f2e8d33fd72cf6e48d07201da14f1caf09e6cce065e58728fe8be53b15f0",
+      "rank7.json": "e563a429488b56d0f600cd371a94bece8134559c951140f2467c8726b14fa3df"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 5,
+      "index": 25,
+      "directory": "operator/trial1/block005-flux_taco"
+    },
+    "command_sha256": "2f3fcc0b1ce599486e72ab5b7560e8cc2b5d776ebd5a196a6a5888b981bd7557",
+    "rank_sha256": {
+      "rank0.json": "39e4dd05d421879e506abfc2cdb4bb4f34619956d3d8f1ccab2a5bf3df83bd43",
+      "rank1.json": "0c68544ed55ff226e9c1a51ec683b1938c679f058abc33fe93cf1c09a6698221",
+      "rank2.json": "85f735badc739efa9df2b6d4bd28cf0b782ff8e42ad85c9778497bc2d5171f18",
+      "rank3.json": "d7bef5345997e273a269d58fe2b1c4d4a7a584febdbc628c493018aa009d33a1",
+      "rank4.json": "9031d98d7d18f897a53265bb03df1b6a015adc70019645365749af50f04d8b1f",
+      "rank5.json": "69c66b9fe4c3f39c0673cb7c9ed1020c288a3a66a8dd6c7e0e7a433578f88356",
+      "rank6.json": "432f2221a0eb3895ab986583022a40cc34c8000d76863d3d0b35085c1022ca71",
+      "rank7.json": "76138905229e53974b89c04731b40c0808c9b6fa1dd859d0d5b4e5501be911f0"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 6,
+      "index": 26,
+      "directory": "operator/trial1/block006-flux_taco"
+    },
+    "command_sha256": "04b009a577ea196eeda9a393048b31cd29ffd9f9fa271ab8643829e47aa5cc20",
+    "rank_sha256": {
+      "rank0.json": "65cc1fd3c94cfd15b37085bd86dc0e324ef20f4a7b5a7f46df47c08c35ae621e",
+      "rank1.json": "ca48fa7975c07d58dd2b5ac452b26cc850c2006afad7103214dfeec6535a0259",
+      "rank2.json": "c9520df72556df79ba335bea7078990ef20aba91633d8e38e68d4b70642f96c0",
+      "rank3.json": "6da1da0677c1911122fe5e37706369b87d110cd08750d7e8ecf9315379f835eb",
+      "rank4.json": "1b738681b72cf9de7389b1a1b29fac1a38046c34b136c3ffcaad70efe3b62a5c",
+      "rank5.json": "8566fa9cbfc4df3b2090c0eed9f9fbc4282b51f68ea9c3af872d25b68b778c77",
+      "rank6.json": "3a6a0da00b61af583f2ba5cc1944ebe3e0ff86a718133bdea526b74a1afaf723",
+      "rank7.json": "f32ff0b0fd524556579d9fd33e8de69f74b0aee1289d11b6813dfdfcc34d0593"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux",
+      "trial": 1,
+      "block": 6,
+      "index": 27,
+      "directory": "operator/trial1/block006-flux"
+    },
+    "command_sha256": "b256cbe18ccbfc8d526e874c5c2d815c1129142ce0b337a96e835c6356c2a0ac",
+    "rank_sha256": {
+      "rank0.json": "068f46883cab1ac2b3f52503aa716b24decc68ade4c42296d0f0804d457662a9",
+      "rank1.json": "b2523bb74eedb764c2bdeb2ca22d4ef380369dbb8e0f671549e361fc010d2552",
+      "rank2.json": "fb97d1bfa69333aef99ffa4c382524df9231193724190314077769a81affd52c",
+      "rank3.json": "d63c777a47aa1042d0c6b7ddcd9d338423aeb291d3c52d7279d88ee7044c2bc6",
+      "rank4.json": "26fc9ccdd6fd12b7a632aa6976851f588b3578c4a746ceefbbb6d1409dda9803",
+      "rank5.json": "e0d90a82bafe207911794ac59cfd0f5b9a395cf5393970dbc385a6cc78067956",
+      "rank6.json": "b92fab7d6e239b0ea2318969bf3b57f151b26ed3dfaec26ca0e08093b3e67843",
+      "rank7.json": "056e21531449cdcc52c59628f5c83e78ecf3d187fea9779b021635f03a67743c"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 6,
+      "index": 28,
+      "directory": "operator/trial1/block006-flux_taco_interleaved_arrival"
+    },
+    "command_sha256": "63f6685493ae55f466171aed15c693255c6923d84ed12b9b5d1ae6c17445a47e",
+    "rank_sha256": {
+      "rank0.json": "6cf6ea7b5d3d6cce46dcc402fe0f948f86b62245c60958b9b45fd1664a18cec0",
+      "rank1.json": "460d3eb0c9a75f18db65d259c6f6c31d40961452a8b8c2544013581a2f6eddf7",
+      "rank2.json": "814d635015b579a4e9f43d00e5ccd1d8ba50bd51c0b2baf664d5e908bac706c7",
+      "rank3.json": "3e28941835e84e1cf86fcf14f80f2ba8a7d5ee651cbfe5fe193894e378f0785e",
+      "rank4.json": "68fb21ff9054936cdbacad19effc2a3a2efcd6db8c635f867961e9f99f7a35e0",
+      "rank5.json": "63f7abdc2cc8da93aaac2841f62247e689114cfc25c292d4a8f5290d6f2d42cf",
+      "rank6.json": "e3ea72552b1e246f02e4a16165bc72089d3a1c0a1ee31e68e372928a57334ea5",
+      "rank7.json": "bd0b952bcf481366cd3e004a7d5849fb82ed7655e34cec12e2f223467d87bae7"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 6,
+      "index": 29,
+      "directory": "operator/trial1/block006-flux_taco_interleaved"
+    },
+    "command_sha256": "656a1a4f409c09e8e77e147917c95cc70362e96e1967d984e114f2431fc484db",
+    "rank_sha256": {
+      "rank0.json": "efe829fe5a13d7e861b9d00000a4d601c3e822e0ea748d0ba126db6423b6d618",
+      "rank1.json": "f1a5d6492599c2b7d4168112a3aa5a448ecbad3446cfd1433ffc2b29424b3529",
+      "rank2.json": "43968894eaf8d0168af6486a0abbf4c9ec8b4d99f51820e5db7f1b7ad439baeb",
+      "rank3.json": "dee433bd6864867a8f84b055816fca8093fe31e8e924035047b1b4f0c9374236",
+      "rank4.json": "9ca2ad2fbc524d9f7c71cde77a8b18dc879c8bed78e9a8dc76b6c557cf6499c4",
+      "rank5.json": "c8e0861cbe6eb563d2984aa0eec2370523ae6b22f180f2f33ea788be07fb5660",
+      "rank6.json": "9b6b862dbcd11bf6697142e767aa5403e25190f2f1db3a99e8bea16701678099",
+      "rank7.json": "e61104a267e21b94440cadfa4a23d9bb51a342c760c6adabed887daaf3ce3cd7"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 7,
+      "index": 30,
+      "directory": "operator/trial1/block007-flux_taco_interleaved"
+    },
+    "command_sha256": "a3b00a270b50468f7cf9b5399b800fa6cbce4469e5071ff7a746864d30586e17",
+    "rank_sha256": {
+      "rank0.json": "d4c8aa23e1880b1ebc855a0ad18d05462df38aeb5fedb58c74b3c181e77ddf6d",
+      "rank1.json": "558e1d7a22d095be813cf9aa9fc284b285cf791502a1172ee61df818601117d6",
+      "rank2.json": "563bcac3887a6a5067f85dc369126f7e08622b58b61eab0580f675c878b6e07f",
+      "rank3.json": "a9b76e5793ab23ed0746f613772088d41c0da0d5b6316f3215ffb68702833547",
+      "rank4.json": "8057b82893b4948bf4d3a14123101422b77bbb61a719583b16b4b433b09309f9",
+      "rank5.json": "c06035221041af33b0efb3c67aa3ca5de199d9811891da4706fe432fe0bb21cb",
+      "rank6.json": "008b7eb5a1b8eb5bc14593e1d9b1be6fec6239c07e6884e1641a8df327b872fa",
+      "rank7.json": "35e42f5287814ff16dfd9fb51aae162eed30d6ec2cb7733d7b08193dcc7ee598"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 7,
+      "index": 31,
+      "directory": "operator/trial1/block007-flux_taco"
+    },
+    "command_sha256": "e763468b1c68bae8812251c885d36e438dce1da350f360e8dc5529b0b9117449",
+    "rank_sha256": {
+      "rank0.json": "1d919cac00f41f97475213c94c7b3a9226ed01616a29aff0af5b1c135ca130c1",
+      "rank1.json": "31c306490d31ed2125c03861a87c55dfd9e15a82a4bb7de610183aa897a0e1db",
+      "rank2.json": "25b541c7fb765654f2dd42933f18add1e15af0bfd492f1514ff6de3536ab561d",
+      "rank3.json": "42aded084783aa201b90c2525296d9fc34c4a7e8c49505dc82e48f06029b90b6",
+      "rank4.json": "31a76de8f07ff12dd8bf8c2d3e2e662b33ff25c4062555e98627e5f9499ff603",
+      "rank5.json": "c0171b233db5b5e0130c27ac88847bc69c6888ce6f102bd0b2dbb23648e40df7",
+      "rank6.json": "abf6e6b68a98846ce71da4e983a09facb40c8f9c57c060c10b4a96ac9485f3ac",
+      "rank7.json": "445718f523855cf6ac8a46c1a8c58e25c1424bdc2cf006ff91bef17ae2a10da4"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux",
+      "trial": 1,
+      "block": 7,
+      "index": 32,
+      "directory": "operator/trial1/block007-flux"
+    },
+    "command_sha256": "75c72b25456aa4173066109755f62dbb69efcd9f1fcc98baf8edf1a66f32e217",
+    "rank_sha256": {
+      "rank0.json": "9b28bed1efa15db31a0fae56471756b980669dbe845ac68d5aa8758f413cda65",
+      "rank1.json": "f87dd23e1eec65a7796094d363e8231c4f2088385dd4d9c7a96159feef39cb00",
+      "rank2.json": "ac69a856b34b731071639fdf5e23d9085a23be569cf357ada766f250a8ad9cc8",
+      "rank3.json": "51f683086c50b929a9cd3cb913a287c05979ae65c6f3b1a1d822f5f9b731fefd",
+      "rank4.json": "3db33bb4ef7f40bf7d9592525fa15f16e610c8a82d4f18d538378d2e1c8583e1",
+      "rank5.json": "6d188f0bf7d411764c406e17ef6911fc7562fae4b0c7625249665e31ea9a571b",
+      "rank6.json": "c0b6d0c46ab65006e2a8a76e095e8b9785e727174dffd3e54d2f3638dcb3e6af",
+      "rank7.json": "ef19981b40d08d5b9dace79819b91b436ed510030e9ba08518a58ab286e37125"
+    }
+  },
+  {
+    "job": {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 7,
+      "index": 33,
+      "directory": "operator/trial1/block007-flux_taco_interleaved_arrival"
+    },
+    "command_sha256": "c4a1887631462b735433effc826f16c36e61095834d69746054c04f33f634c23",
+    "rank_sha256": {
+      "rank0.json": "51b2b4ed43eac43bb107077c1300eebef4b1b836eb40d550d3e2614829a5cd9e",
+      "rank1.json": "d3004b9d169a56c04d7f799fe9acdc7538cbe2f713eda6d5ebb5f493c3956014",
+      "rank2.json": "7cf28dd01936301905fc06e93a0dc1897f150bc04e2eec3f5674485ee4e8b6ed",
+      "rank3.json": "72500f180e032e1eb1f5070cd3dcd2a2dbbd7f2da716b0ef9ecf5ae15bfcc9b5",
+      "rank4.json": "f45fc6a1385ba2f26ba610d9135f302221ba36d32789ed4bda71a4a45d0e7b13",
+      "rank5.json": "519ee0aec3f2dd23e5f4f45c3a267ccb4287c3772f8c21b859b52f6e53be0ae1",
+      "rank6.json": "7b4661e4096b4d4b378f382c1b3e0908ec7c7bdc9e267250f6002733fd65f793",
+      "rank7.json": "788c7741ed1a34ee02dcf28d80c24e39e04b5a8b2545f3851c7ea0b956137db2"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux",
+      "trial": 1,
+      "block": 0,
+      "index": 34,
+      "directory": "train/trial1/block000-flux"
+    },
+    "command_sha256": "aaacd49e948f8f3fe67c3452b4be411279ded4b09911a409dc699e097a432285",
+    "rank_sha256": {
+      "rank0.json": "04294744eaaed9ad86d3faf176bc9a128a791eca470cebf49a1007a153c4292f",
+      "rank1.json": "47765020dda7859f440403bbc17192dff22a9706f7fd44f96ba6b49ede9bb149",
+      "rank2.json": "e982f32d9ef1c8c727ead6ec0947f7e0aae13ecaf74a8ee2d17bdc6425360573",
+      "rank3.json": "cbb4d48d109350e441d6738e4d2dcbceab1134c4bfc552ae1eec5d347792404e",
+      "rank4.json": "c4d50090e63392215de5e41e3c00fcb74b209c9aeea4171d96d6f3ab2c2b6b86",
+      "rank5.json": "bfe2ccb897e208bc72723b61847cc21e5f914f67730ac13fd8980d1548f47679",
+      "rank6.json": "38a67c773e670b036c54c0ce7e8d7ffa52e34fb54503d504503b92e89404b949",
+      "rank7.json": "54394ffaec9abace827a296849e05a0abe64b7a9482e92f045ed6e600387b460"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 0,
+      "index": 35,
+      "directory": "train/trial1/block000-flux_taco"
+    },
+    "command_sha256": "570cbb2fdf48bb33856498d34be456f032814c9f5439d07781ffa933ada6844b",
+    "rank_sha256": {
+      "rank0.json": "9faeab8ee08088afbf46a0fc367d7dfdaddf7d75c5be6c11347f9b1fb99e76b2",
+      "rank1.json": "8096c386ff1769c114677d86c571cbad2c622519aa905af0e720043d86a80b55",
+      "rank2.json": "922a083bfd444866c8aa95af5acc8d797ab9414345b1a774b41489bd12653c89",
+      "rank3.json": "4cd1d1806d22fa1e78bf9f5fa3bc2af625fa4f6a12f01bb212d94ba764f16b93",
+      "rank4.json": "81e9ed61b5c1a0613c5a6a408e5f97ca33f9fd3de04bedb60bf86e7ea9bfa694",
+      "rank5.json": "9714ff4c7621426304b08c30e3759cda7f83362edff9329d4a47fdfe927fda1a",
+      "rank6.json": "5294d432adf0dc134b1af74336c3cfcbb1c0e429157062c17b9e23fa355b780e",
+      "rank7.json": "2f4b351fbd6ccab41425c5ce4a1f186695be95c80212e04e87a3ecd69672880f"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 0,
+      "index": 36,
+      "directory": "train/trial1/block000-flux_taco_interleaved"
+    },
+    "command_sha256": "ed2f16c213e7b709834603559ebcdccb2b25a970b6fc5eb21e9116707a088fcf",
+    "rank_sha256": {
+      "rank0.json": "1ba0257bbd4730dcbbaf5d410998b29bc6a53294f628a897250501c91aa12b07",
+      "rank1.json": "e7c3d622e963f45a1d25a043daf4d1b0e9346bd830bd7601ef3c4308e860ac56",
+      "rank2.json": "23fbecbc14e7bd9e45b4e867245b005fc48b97975dd463b6ae976c0ca943bdc1",
+      "rank3.json": "b54f43975f65de1c6a518feaae9d129cbee39adc853812d220f7ddf0f0457754",
+      "rank4.json": "830d2a576f75ea906d71b6e4673607c7105052a20769d2699f29891d5521af42",
+      "rank5.json": "6dbca2dce38f060e16235f57c14ba2a7c660b3d6df645a494257dc8772dab7b1",
+      "rank6.json": "0e23deddf06465f9218e0a7b8daf19a4027a110a7e29919b2b0c3d0b9cf71c22",
+      "rank7.json": "a4d9838c6a6cf65413d23b4d6d32728d53e6ade26932efbd2f12d2ab12a2511d"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 0,
+      "index": 37,
+      "directory": "train/trial1/block000-flux_taco_interleaved_arrival"
+    },
+    "command_sha256": "71e0ac294ef2b180f109445766b4701a0e1267167b1a8d6f506ffb90198774fb",
+    "rank_sha256": {
+      "rank0.json": "c71d85a057278eb81a5f0012f62d5e741d805527fa75bb373f60178c42db411d",
+      "rank1.json": "2e9873cb8a455310cc46cc37a86a2e8d117f68f9a2947a1feec265cb92d9aa45",
+      "rank2.json": "24768378f712cf7d231d417925769ae45c2ec731ec55499b783b1cae2b71f711",
+      "rank3.json": "60a024df35eaacced02c36292a830b09e4e04ea378712a3894027bb08c13832c",
+      "rank4.json": "48eb48125737acbea774b5defee7b004666336326a89a7029f01fbfdf31e8a49",
+      "rank5.json": "c20e783cad54ddef152f8fa1c2bec0294f62f6a4548bfb61d1cd411de1bc3c49",
+      "rank6.json": "c0593e8b83936bab62495cf54d24f8987dcd07224d964b07e4d8a0d80caa028a",
+      "rank7.json": "1313f87ffa2d34e17a4dbfeeb80077f99927585beeb1c1e58ca784e626e016bc"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 1,
+      "index": 38,
+      "directory": "train/trial1/block001-flux_taco"
+    },
+    "command_sha256": "b6f3a7c22e5b1994d83e31718bc9ed04b58f386510e12fc8bc6c26cd3bd97e41",
+    "rank_sha256": {
+      "rank0.json": "a80a00cdd4704f447fe34413cc8719bb9a5ccffb979db1d59e1677d59991bb21",
+      "rank1.json": "3dc053dc7917a837f540127da12d443c14775f6c860125be30805abd4b40fb39",
+      "rank2.json": "913b37d5703844d05f07fd45a92d520747297167ed4176057befff145d5e6ad9",
+      "rank3.json": "b43678aa743241f7a8f826f4069926bfa7017107ae6ceabaec29c7cbaf6ab336",
+      "rank4.json": "978e70e29cbe4fe6bfffe6d4d0d09163ca96380f40145e87d5d8f97d4cbfd465",
+      "rank5.json": "adde0bd0b39360a2b8cbf5425fe2e320febec1512a1af69166ada9e8f525c046",
+      "rank6.json": "4e0f5923ad4232e5e8c9a8056eb162f046e5bc655b9e58921d7f21c081d8c6f2",
+      "rank7.json": "adebd6d068a30e013a2ed2cf4d878c399b84d887315882785c9428870594e4c1"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 1,
+      "index": 39,
+      "directory": "train/trial1/block001-flux_taco_interleaved"
+    },
+    "command_sha256": "4c073c6d6ba45491237583c5422ea4aee94a428e37adbdfaae34dc7f9e37bba3",
+    "rank_sha256": {
+      "rank0.json": "f81de608b8332a5b6f9f40c50832edad33f13a1d2c3eff1b3ac23723294a3846",
+      "rank1.json": "5c80824e58eed1ee21743d851d0663768ed608410baf9cad2178667a1e71e75f",
+      "rank2.json": "28d939d0191d3d926fbf1b52c56c72ca39fe1a314234aceb2121a847e1bd3f11",
+      "rank3.json": "79d1838d4c80a08f7011399bf222a5d50eb832696102b4104329b098e667c278",
+      "rank4.json": "29568991e90578c8b93a6fb35b8c69c2b2fa7c62c23e351dd4def2cacdbd10de",
+      "rank5.json": "a76aa7232c3aef0513a6c570e3a07f319ab835fd3a6e76ec62701a2d11cf252b",
+      "rank6.json": "6dcde93faea3743cb405fd91c5f52075cb3b482a53b37ded4c6835f34524e468",
+      "rank7.json": "1220493ff2f545748461c8553140a937702fa40b1c32e4d9bd4792fb5396f704"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 1,
+      "index": 40,
+      "directory": "train/trial1/block001-flux_taco_interleaved_arrival"
+    },
+    "command_sha256": "b3973b9ee1ac2a743956e8c2c3d4a189779789e839f53fc6c22aee5417bcc4fb",
+    "rank_sha256": {
+      "rank0.json": "459c7b730843be5ec878c4cb15c991f996135e8b12a886b3183f40a1e33d8e28",
+      "rank1.json": "debd35a818dd0bcac141b4c936b002df72a583a5bf505d4feea9d5eeba90389e",
+      "rank2.json": "9d9991b8bd6b21eebd19fca2719fa460ed464e1da44db2482ad63fef5ab4d71d",
+      "rank3.json": "099beecbb8bc4d17865c5b1343c9b88f03b9dac6f66842c283b9333c0efde1ca",
+      "rank4.json": "d585db373450850307ee70075e3b13fcee6727b15a666350e28a98c1b1a3103a",
+      "rank5.json": "e660b12a6183c9637803234ea00fbeb2b90be139baba6f4fd621428642e0c414",
+      "rank6.json": "f257d9aedba2ad9133ff6da7f80bd68063084a7585530c9c3744a0afdafcda0f",
+      "rank7.json": "733ab160da890f8f68ef94af3f7177f10e4b1440eb957c9be99243f6d6a80e58"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux",
+      "trial": 1,
+      "block": 1,
+      "index": 41,
+      "directory": "train/trial1/block001-flux"
+    },
+    "command_sha256": "457803d29e91d2aefaeb04401d72ff64ee456f9bc26b1a47d90321ab56006410",
+    "rank_sha256": {
+      "rank0.json": "817fff6a518abbd7f542862c9702d801ac29c7f5fcd873fd39170d9d7ff77d0d",
+      "rank1.json": "69f2315cbce1cd8b500d7214439daee8cc3ff3c2b9c5b19eb1cadeba7e73667c",
+      "rank2.json": "02625c4fdf2d5280190d27bbf9590c3c0aa082a007e6c603fdd5306534521716",
+      "rank3.json": "0cf9dbec8d23f8e3e7bd5b77cd4f0833ac82d86b06b2487b3f5edf27fbec03b2",
+      "rank4.json": "8c02674be1bafe88271eb9b242b554e07e0b43bc09b9e9c063fca98504667255",
+      "rank5.json": "5c9544ced15df0b33ff66cc5ed6f729a524856d55c83524dab6ff0cf8638a7a1",
+      "rank6.json": "3e8b3db0b7965e1d2f7f8e612d9bdf5f78cffa37541186b0945421d18ee3fca4",
+      "rank7.json": "80a2c770cb98957bca43ad4b77594ad7b04b3c188955a543552b1640b6a32b88"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 2,
+      "index": 42,
+      "directory": "train/trial1/block002-flux_taco_interleaved"
+    },
+    "command_sha256": "0464424d47df7205f7d38b279a7270616e88979b73a51ca185692c636d46e730",
+    "rank_sha256": {
+      "rank0.json": "7772da510cb56f0d439894b3c9785d11434329dc465e23623fea36d833fd37ad",
+      "rank1.json": "377acc43699d89f1d67f3f310ae6a2e385d18e29d20212d08b20c77681951c67",
+      "rank2.json": "23e4793bffa4058a35786a4c9d5679e35641595f8e7e2220c9725b0b0b3f1c5d",
+      "rank3.json": "b27a32716d17fdb9a70466a4027636f48a38a6820137a588515bc87835ddaf26",
+      "rank4.json": "a5a85807c3a0ef5655893b19c81fad3459839e18ffa100b914baded2b15bcf82",
+      "rank5.json": "ccd06f9290b771552ca84465f7f2ee810776744e836880424835794101864269",
+      "rank6.json": "53a752261a3faac7c8f4e47d73bdf33ff7395981e7b847030d8bba140cd8d9e6",
+      "rank7.json": "5dd38395e2cc3e51a9298e52bd9e35cc09b12e87e45c58a1578756813839e7c6"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 2,
+      "index": 43,
+      "directory": "train/trial1/block002-flux_taco_interleaved_arrival"
+    },
+    "command_sha256": "f4770e959f8094a1dea521aec6c12e8a9b0b50936a88c0b6ee24796a45b3985f",
+    "rank_sha256": {
+      "rank0.json": "447ba849588959449b3b81950b66f487c215cdfc567b94ab203105be04e83dbd",
+      "rank1.json": "589ea1416de08dd094a1856223bfc1f9ec92492c786f5d3d87d59f7d22888bce",
+      "rank2.json": "f4cec00908fd039d6be311d5c1f520fd7690b30bcaf7b13657c86e9d472c201a",
+      "rank3.json": "8d7e9e9fa815f30780fae1efb88fef8b784975fda2b92e880341838531dbc8bb",
+      "rank4.json": "e6e7bfebaa46664d6bdec1ec9532d9f93b148b5087e55d89758290a1e215fd2f",
+      "rank5.json": "a7475b6da6ff305f1254806707445705fa9a59a328be7c94113c22f7cf5dc7c2",
+      "rank6.json": "4eb613bf9cce3694f3deaedd31645abb499ecd43abaa48ac22a1f4bd54649178",
+      "rank7.json": "bf480716fb6bbfb99898899034e1617ac0ba3fb9e55eac9ce0738d4296db2a84"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux",
+      "trial": 1,
+      "block": 2,
+      "index": 44,
+      "directory": "train/trial1/block002-flux"
+    },
+    "command_sha256": "80aba2d5bc82d5304215c831632e9e118abac750dcb1f4cc7acaee5758ef05e7",
+    "rank_sha256": {
+      "rank0.json": "d671733d330d02a2bdb5460ca12612125ed44987e264419bd9eefb6c9b898410",
+      "rank1.json": "b4f2c553c26468a1b64b7d6952953d97b1c54dc9f56674a977c3c3c00d2c434c",
+      "rank2.json": "4d4de6e4fdbefe130a4874c96a744faae931634617244a3c0a2cc9be82a2b877",
+      "rank3.json": "f8b09402ff52ea4cc2f571ecc79129e6fd38c546aa28c491d53e2a052d79ba31",
+      "rank4.json": "316867816024904ad464f7d8e8e0e0f895007df82f4fcf5be67c0e61977b8ca0",
+      "rank5.json": "45d534aa98c7a465aec56e5851186d9efc3610cfb4e7ca59e8e35b1d1b9a4386",
+      "rank6.json": "b23d3266752779604d41393dd5538cf4afcf0bf7d89356ae560df677afe0260d",
+      "rank7.json": "ed1d622be6d648baeb89479ff2767a503b615a5ba1fd9aae9f48090915a2a738"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 2,
+      "index": 45,
+      "directory": "train/trial1/block002-flux_taco"
+    },
+    "command_sha256": "28a9e3ccd3ffbca696cc112bac536bd65a24a70f7440456023ce8dc9acebe858",
+    "rank_sha256": {
+      "rank0.json": "a969d85d377ec3e94a1f54566bfcce128d58f9d07cf15f2dab87e836d84a8ca3",
+      "rank1.json": "9c7bb217e7fdbd7226989e9438b5374c0000f531dcecde80e1bff77a841e93d0",
+      "rank2.json": "16e42b932a9c8aa8ed0b69d2799152ff7e8b2f9b2bf265d91c239505f0915bd8",
+      "rank3.json": "b53fafa94b15f71e47ac52dd6570f2ab638c3d540c649c2354da28dc5bbe3cfe",
+      "rank4.json": "5d2e291ad2c9e95963c1240df84feee57f98ecc4b7adc51fe652fb92efcfd774",
+      "rank5.json": "0261642dfd72df9fc97c51ebea186c00878a317d1816d5a9220591ea631b9a19",
+      "rank6.json": "f2db46e5da1574403cf0e368b90b3726979a67601f1bf7c88455371816e29fae",
+      "rank7.json": "36ac17af9e2768d940a423c8b181bbb546daef7f4f0d853e7b293583bfa0e5c1"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 3,
+      "index": 46,
+      "directory": "train/trial1/block003-flux_taco_interleaved_arrival"
+    },
+    "command_sha256": "68aaf183c6886d19f0a99a0ab20aad6870cf57f4fa92f9ec7688e570fdb56014",
+    "rank_sha256": {
+      "rank0.json": "b2741b899cceb9e6343a925ab79c2406545eeefbd26aee8da84795a84297faa9",
+      "rank1.json": "0241a5bc08e4ef89b40c80c2758f0c0c43e53c6908709ed74dfd0b5c9c6edb3a",
+      "rank2.json": "c4a273825b6f1ae6ee5076b10932055b93242f4f0a1f39a664906ce66b2eb901",
+      "rank3.json": "6d0fec7e02a71409e41e42bd206f820b04699a309ea37261542def9b68491c85",
+      "rank4.json": "fd145707404edef28f0fc972b060d2e15df37ea2966a1be79f73f299d043704d",
+      "rank5.json": "6562726a51454aba37ee31d3e8af9547a2425143a4be54c91e3b10048ddb9f6a",
+      "rank6.json": "4b66b4b9a8a5cc4eba73d2cbed955cb420d19b5c6a0f6433985296e2c6cd1e39",
+      "rank7.json": "7170ca5aaec8294fc996bdb2158958624b0c615c8be2c2ad9f531150de83d08f"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux",
+      "trial": 1,
+      "block": 3,
+      "index": 47,
+      "directory": "train/trial1/block003-flux"
+    },
+    "command_sha256": "021dfc61de4bc0e8276bc60ed51da9cf1f5518a8222f515c1fe5978b69dc3e91",
+    "rank_sha256": {
+      "rank0.json": "95ee4c7005f1f5201700e2b71cd4630a615fdbe1d21856b886076ed9b67a21a7",
+      "rank1.json": "4b2ec4c01f40fc6b1059ae5c7a7a9f18d125d3b3bc36c5972d721a2e70d3f775",
+      "rank2.json": "2c1d5ac0cb930c5844b80f8706a57920f351cada1bc46767fa7e479633609a26",
+      "rank3.json": "8daaa572bd23cd6b5098c8fd200ae8da2220a96b4a69fa5ef1cd1f255e7a7d7a",
+      "rank4.json": "1b5e77f1f854bf29e8effea6adf4a01a365c452abd970c18b6d0d2ea5d4de75f",
+      "rank5.json": "a2a7c9f7a8ffbce973afac9a982e994f1fcb6e6c3a4e08baddb5f4adcd16769e",
+      "rank6.json": "41ca4aa15d297f0c6dc96e2becd13e83497574fe7f8cd9346b369688fbbc723d",
+      "rank7.json": "39c1837e355eff591c7df8cd6d1f61aa203e3bfb2a389ee6b93ee5995c18e51a"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 3,
+      "index": 48,
+      "directory": "train/trial1/block003-flux_taco"
+    },
+    "command_sha256": "8eb3c6d628d4aa903674ff3cdc93360f34cfb4082db8de55001efe0391d4df86",
+    "rank_sha256": {
+      "rank0.json": "c9f7a40b4e4be55175c9d4ef828c0dfe80ecb8535a2de2375684eca7d4983e1c",
+      "rank1.json": "a6469d30935cb0430a5fea6bb0d91f4a04dee378fa6d741157c168e2f9fcb396",
+      "rank2.json": "f7a3d6745ad7cfed94516911e5625b915cb2f9f84043d342f29da8fd30accaf1",
+      "rank3.json": "8d7afe47547ec0d0730ab8eb714396610f4a6febc16937dd143af7f5bbd0c569",
+      "rank4.json": "0d3f69168da88bd91c0fbfc17524b5d819abf085b627958915e47c933d7954a3",
+      "rank5.json": "c96e9b9117566afd80c050246ad2a6b6459f9aee2774fb5e187577e84c7c86d5",
+      "rank6.json": "e81f543f57e78b976c3d2b39ede12a47bc3a5dee0a748751e2b6100abda6178d",
+      "rank7.json": "f0e02252ec4d8d8e0d9c04ba63882cd9ac0a64be79e954ad65fe7a839af54490"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 3,
+      "index": 49,
+      "directory": "train/trial1/block003-flux_taco_interleaved"
+    },
+    "command_sha256": "33f342379b217de70479de14bffa8a4119f281d8f1414e3c9574e144c493774a",
+    "rank_sha256": {
+      "rank0.json": "0c90310474d966e26bbdc711bbeb7172b7cb65508f7c05256d650a8e5bf50ad1",
+      "rank1.json": "baab89601bfb2e30f0e1218c315d93086c60110039c157a02ef9fd8a37547bdd",
+      "rank2.json": "26f4676e8408fe79c6284f3dd11f4a7503a5a1c5a5ff42884b8b388f70d0d803",
+      "rank3.json": "dee1e3be2ed1623fbac97e3f1547bffcd3fb7be9d46c14159db4d160d9b56c78",
+      "rank4.json": "5fe917b942eae809f8a49d4236054b07f5da179852e0a8f82e2ce7509a880041",
+      "rank5.json": "ff78373e622d1835bd831a885b23715c439682f0cc087be2f16e6015e51a0fb3",
+      "rank6.json": "cb5e7380951ccdda54115d60198bc6abdea59074a66eae6692462d40506e1c06",
+      "rank7.json": "a2f60d1c332e113a087ddecf492d12634d4e58a0209b76e6a5fe9e7b453039f1"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 4,
+      "index": 50,
+      "directory": "train/trial1/block004-flux_taco_interleaved_arrival"
+    },
+    "command_sha256": "b4aac01c7629c802a322beb033241e878327513b381590bcf43d74aeae0ce924",
+    "rank_sha256": {
+      "rank0.json": "4c14add74f57cea7c564b7e073f2f5a2b9ecb51eb43deba31243bcfbaa80c8ae",
+      "rank1.json": "8c87a790975715f457772407152cbdd31a363d2e758fa7aaa1763b8266c3b731",
+      "rank2.json": "355f8775c04b0b371be2371bd7130ce8f3ffaf7534742cc069f7cb9b0a8ca078",
+      "rank3.json": "09fbd8642442f95ab60d42e58c2319167a9f6a364de4b69c24781a733ba2042f",
+      "rank4.json": "8db82d8dd94d59195d2ce0a2e6e8f633da976ee3e17ed0e667bbfc045708f81f",
+      "rank5.json": "45971befe0dc5e0c3905236df2871fb12df176b4e593693c80635ab39ee79b78",
+      "rank6.json": "8b061599ca8a95adfc328de3eb90258f2220cde323fee73ea6e38fac92434836",
+      "rank7.json": "2d8765cc51e8b8c755d97dc34ba0982d0da3062b1b972021a2da2d15afa6c788"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 4,
+      "index": 51,
+      "directory": "train/trial1/block004-flux_taco_interleaved"
+    },
+    "command_sha256": "456a5c395dcb061679b7cbf1f3ea5391227a98806d1089f53ad0259758a3d53a",
+    "rank_sha256": {
+      "rank0.json": "398ce37006d5792209aa71e37fa51b3f42d58d64594ea71311add21f41ca24f2",
+      "rank1.json": "07851d4a88c8f92f59be917850d7e4b023cf47d58c5db75415b8175c97da6a13",
+      "rank2.json": "1fc36a0657095a48c78163627c3debecdba631dc44719d89fda5524a30c5e10b",
+      "rank3.json": "e484e56f446a66e1f4a84668dd95dd921afc9f2512fb4483fb0b0276cd326c4e",
+      "rank4.json": "e25e590cc232ee2b2120e990a88b6023a6ea2b7f70361615a58fb27606c22300",
+      "rank5.json": "47bfba736e39c6261e9e8f6341098cf4b50bd993db5ab2807d5881323d530995",
+      "rank6.json": "956881209e908ba7d3b7bd9884602ed7cdbe3e1299798a7271f26caaeff2740a",
+      "rank7.json": "200a10f9be2612ecac572a436bb326d0f2ee255a565bd43df9585192de6e29fe"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 4,
+      "index": 52,
+      "directory": "train/trial1/block004-flux_taco"
+    },
+    "command_sha256": "b4f5b22577787f8320de7cbb7e4fbec7650054373fe672642a23348f9eb83b17",
+    "rank_sha256": {
+      "rank0.json": "6a33cb51e3b8a032447432d0786b98bada664a4a017331c8da02fddb4e8fa2b2",
+      "rank1.json": "0c285e4ce1abfe3aa1f34fad40c017f1c9cf14a4d58b36410c6bb7e19b4ba706",
+      "rank2.json": "6a69adc3779e4cd4f7732892f77864e37383d41fd227a313c631633648f59a36",
+      "rank3.json": "f0772b72bfb7d8e302e7d0dddecef3c08de9370744ed316e2422b7eebf54bc5c",
+      "rank4.json": "bf81bb31799ad6003a7bedb57f4b210f7332f052b701702e14d34fbcb794c619",
+      "rank5.json": "1aa4eff60fc539314417313894981568fe90963f0c7296395b46afffa954f3c4",
+      "rank6.json": "d16c45e9a5e636d330bce46fec1ee6d7540f5b98d125cb2e18330c35f9e8b77b",
+      "rank7.json": "b777e56d376ff0a8e85322c076860bd7e526f1b4231148971ce6540f7b7baaf4"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux",
+      "trial": 1,
+      "block": 4,
+      "index": 53,
+      "directory": "train/trial1/block004-flux"
+    },
+    "command_sha256": "e01a9945ff5d9ac68a29c2150bbe2ef8221327df9bcfa66246d5e20b23da85de",
+    "rank_sha256": {
+      "rank0.json": "f1e8af5681f74b74714f17a0cfdb7744d0eb1e35c5da9a46f9e922231210b406",
+      "rank1.json": "fba930e88c5fa61d709c566e754e56b66bd9f69650133fcb0a6f4b772d362986",
+      "rank2.json": "aeaa2d0e30488528e5da9a9161126c6169f26f2474e173ea3683ee4f374dd65e",
+      "rank3.json": "0c6e1e2bbb34356c6276fd71aefff78ab3af5baecfa96c1e2c5c6cd507e67fcb",
+      "rank4.json": "03207881362e7ff0c866c74b9c453b673cf95401e25690808aebb0c1a54f8784",
+      "rank5.json": "6b076abdb90f0e1ce1c3bcef7cde92e629dc96c1a3c283e106aa7bc4b3ec42dc",
+      "rank6.json": "e8e9fbcc8b5743843e914c48165f6fd65fa320d297692b28bf737dfbdb70e782",
+      "rank7.json": "cf2f20269779ce7437d60310ca4e4c9a76609e07ae249af0e53f4a103b74ec9f"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux",
+      "trial": 1,
+      "block": 5,
+      "index": 54,
+      "directory": "train/trial1/block005-flux"
+    },
+    "command_sha256": "7bb8e50c7ec595b079ac218019e11160fb44c716c803948cad29298a79c78074",
+    "rank_sha256": {
+      "rank0.json": "6d322c5f9ff014c13bc25bd0b733353cb57968df2af850a5cea19f97b02090bb",
+      "rank1.json": "9a8295776bdf7589b96a95a17947f0a2711babe879283e6190b373bdb2b842b1",
+      "rank2.json": "758e22d970a7d8434bb12e02f99954c3d8ed5e45758c428674fcd4cc86689edc",
+      "rank3.json": "ccc000663e8c693cf36e5b4f51568aa54898436b81ad8d7b6a6270120bd03117",
+      "rank4.json": "edffdf07eb016e82d466daefdcb142a3afa99969c06de482f5bc42c861dfd259",
+      "rank5.json": "fc096812aff27d907e01f217d239d28dbd7f00a80587aef8c56cc3354c517629",
+      "rank6.json": "9b4315595a66ce3b7afaf8361ae3b5e71c3afbf928c1b1286b755d05fad2656c",
+      "rank7.json": "ec94c48a66ffd23a91ff842ad2ac4e41821de1beb03893d8d7dd1c8772242d7c"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 5,
+      "index": 55,
+      "directory": "train/trial1/block005-flux_taco_interleaved_arrival"
+    },
+    "command_sha256": "4dfa9784dadff10596a7c5c56b469590e224ed477e6d591da8ac82007bc3ced9",
+    "rank_sha256": {
+      "rank0.json": "3299c16569eeaa52157a0cbff9c5c6e61f94f4288b1913b51b2ec3d9d0fbc414",
+      "rank1.json": "5e23ffb25bf8706b2b45e3adef8cb43b85376e0eda7967098606f3fa83af34f3",
+      "rank2.json": "cb817da4441d60bf7a86cc2318c13bf76a9d1de14dc7c9859a4ee091017d0237",
+      "rank3.json": "9a0c746098209d0209168d8ee3db13d9cf1f290ff4c528c507ecc31d693695d8",
+      "rank4.json": "910f37743a44ab468a09909b9d2a2298971d028087a17d4882242cd655895be3",
+      "rank5.json": "78b0f446fe0fdca61af601e4a6abb04e096486874e7f97409ce74f7ff4cb6106",
+      "rank6.json": "32f6b201c265da578002d10205197dfc6d78accd7b042f77e68fd0891d6d7cc7",
+      "rank7.json": "a334931e1726f1e39a8b8f0187f2accf03ecf76b1cefc5e6aa57af29641e2c75"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 5,
+      "index": 56,
+      "directory": "train/trial1/block005-flux_taco_interleaved"
+    },
+    "command_sha256": "21f0141997bf72eababb841c52872bc51813c6edfeb6745639edc67afd43b2fc",
+    "rank_sha256": {
+      "rank0.json": "6d7ff158aad80dcb6450d6e03454b1b2194aec489a68ac2f7267f7662736f5cd",
+      "rank1.json": "2b8a36e7c565a7d3c8dfea6c728495c4b533d69718a4ae5ef03ae497b387a075",
+      "rank2.json": "8505c30405cc7c5d08d92be22f7348f470baf2d77ed830b1a259609a0351854a",
+      "rank3.json": "25e2698415b009d29a7eb766863bbea5b2fdfc4c78bac7dd0878075d0822429d",
+      "rank4.json": "0bcb9163a27b87fb0f2b6dbdbaefc7286168f99f0ec5ce2f2832a06a4c2d7bea",
+      "rank5.json": "00e8f137335645ff6d6c9c1b073b7ffb58d0ac80eb4a56df6d8e1454f1c9034e",
+      "rank6.json": "5f00c9e28f9f4abbfd31b8c5666a28cce17c43186a4b94b58b95c3635b6bef27",
+      "rank7.json": "a3f484328bcbd6f5c4f6ca68ec27a9e4c32a7cf15b622caf00def30b10a2c719"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 5,
+      "index": 57,
+      "directory": "train/trial1/block005-flux_taco"
+    },
+    "command_sha256": "c20825d1476aa461567a45bce520e030a3fa76ba2835f3c0470fd00dd0dc459e",
+    "rank_sha256": {
+      "rank0.json": "07bd97133eeecadc046d534a314652adc0f6511f3f051f3ead43e2a47b3acdc1",
+      "rank1.json": "5d165ddfa24233aa9fb89b53c89c5e596026b997109b19e849085b799b32b6f8",
+      "rank2.json": "0146af2145977ded3defa8a395b7c9cc5c12e23dbe6ab97a2c4794c7c9947d2e",
+      "rank3.json": "c3be310d0f2ffc13eb0416aee40a45ea22eb556ff12c679317a17dc5b8d95e5a",
+      "rank4.json": "aad29f0fdd1e8eaa23cec3a64e7125956f79f026617e30810b4eb78401b9627a",
+      "rank5.json": "ae1933a526a071ca1b03950e434402cab4456723c5bdbd05eed105bdb7b55c78",
+      "rank6.json": "cf8d798ff09311960b65d99c560d8275637307150a958a6dc97704a705a5910f",
+      "rank7.json": "a20c5e664f12bb4728d611fd534f72bc1c02bd02d4ee6092f50573757534c3b3"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 6,
+      "index": 58,
+      "directory": "train/trial1/block006-flux_taco"
+    },
+    "command_sha256": "569699ac611200a85ba7cc0f66aa1a6c999f0995814081bb62219eb2384f243a",
+    "rank_sha256": {
+      "rank0.json": "4d0bac846eb81fcdd3dd3818b871d7e6d02b5ad69949ee623ee5b0c551536e75",
+      "rank1.json": "3cdac012eb2ac5bdedc0c1ce3ab5cc864b869ffc1f1b2c5846ef6502e9e66754",
+      "rank2.json": "7841c7162133b10a6073991940ed567dca784255c70592247a4a1ca00d66c9df",
+      "rank3.json": "fb3adce61b889c9a0c574bfbf605e1ed127305063e5e5707ebf289793b4e3a76",
+      "rank4.json": "e844491befc8752e6b0bab6797282604bcbf53667dd3ef4eb78b3beaaa9176e9",
+      "rank5.json": "3fdcaec3f512693a94ea3cbcb29877c2f0d01c509dfdeaccd2ae02fd35be3a42",
+      "rank6.json": "18ae880235c788bcd5d7130154631467d5e646ca74836ca3126b8e46934d3686",
+      "rank7.json": "09688e12a7b97ba9219d8b7a768dc224ea3b15aed9a25e3f011394293df6f5eb"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux",
+      "trial": 1,
+      "block": 6,
+      "index": 59,
+      "directory": "train/trial1/block006-flux"
+    },
+    "command_sha256": "edacd0d03f27a82e574acc2395a1fb536b8cdaf01ea093169fc71f5cd5449f4f",
+    "rank_sha256": {
+      "rank0.json": "a7a766cb0bac92be6db6fb75e593b2329afc7de67ac23ad30b9eb502638a581c",
+      "rank1.json": "b068977499eaa1df53ff34870b8e22eb2ad3c4dd7ff011c5b7816b9ccbf1f937",
+      "rank2.json": "b73d6c2426683175fc3b5bdd864dfc588fb2420c55b6d0766e01c71531c2d0e8",
+      "rank3.json": "a8b724eacf7298d70395f4aa5d14846099a1454906d8f3adfe272d66b0a15291",
+      "rank4.json": "bba04f51872255d25758c5b0e3c9bccde3a8593683e1100fc52b17f1e076bf29",
+      "rank5.json": "0624ca3410d4e6f2df70ce8d86b812ba258fb189d063ccb272fb136816e712d0",
+      "rank6.json": "87f5ea33674faf2ff6cf9959dd1d866ee051d1e652da945ce9654405c9567858",
+      "rank7.json": "d0304327e56c826abd345bea08202d16157ae571bed4a746269a5ac15af2dcd7"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 6,
+      "index": 60,
+      "directory": "train/trial1/block006-flux_taco_interleaved_arrival"
+    },
+    "command_sha256": "a2335d027e39e595006d17326b88bb268b5cecc144e9dfd188d62c328b0a2a77",
+    "rank_sha256": {
+      "rank0.json": "45dfc9af919c083f23657eab49040b3fbc5ddf86022c6d3f8cab154ee597cd8e",
+      "rank1.json": "06ead4dc612be8880be6f36450c457bc4a2898bb4e6787e9756fe18091a84054",
+      "rank2.json": "9b335222d7d6dc77263d77f752433b960428e6179388fc87350b8cbb6749755a",
+      "rank3.json": "384073950d6a12da16665a10ed8a6cd4ed95ac018bd48c6b701ffc973ccb62b2",
+      "rank4.json": "05be2f9b9250ced314c85073610255a031a6328d2b7df0a8150375d7509b8cd8",
+      "rank5.json": "42ff214dcea1d52ccc8468f1274d395bcd0c9dd14fdd74d92ea126bd51abf9bd",
+      "rank6.json": "58544321e6b0fa0e4c8990532cce80ca795fedc0449cebaa352318c0e1a75de1",
+      "rank7.json": "ecba21b36c3b365e5aad50146a794b1fb88c2f204b589ecab82e0fc1b8b0649e"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 6,
+      "index": 61,
+      "directory": "train/trial1/block006-flux_taco_interleaved"
+    },
+    "command_sha256": "f415a1168d30ef78eaef0e3b0da3e2668e55d14f3f3ccc9980a45efa4e42575b",
+    "rank_sha256": {
+      "rank0.json": "32856c907183056d558dba3117efca48db685f40677b029cb1805bbad5cea897",
+      "rank1.json": "d45e7fe62779b08a27bc00f5ce960722acb88a7ef1aadb45f85d2547ed5ef8e2",
+      "rank2.json": "6650c679fbd6af66a19ea87c816b206f8760654a31373d021ab7e4cd0ce80b14",
+      "rank3.json": "7519e5ff566fa3516365e12b54543fbaba9349f8d1174eabf2b8825f5e4b900f",
+      "rank4.json": "7ec0e6e33b64d0c9108e0ff5cda5463577da1ebebf6e76f5878f20a493bf3b9d",
+      "rank5.json": "470c9fd1cd177ad35e84a9b92a1d8dc244573a41f09b21ada8e7456ae2154125",
+      "rank6.json": "b31b8a23a4cb08ef03f2d28c6587722eac7bf65a8534758171237427b3209885",
+      "rank7.json": "efff644c3698348b980879da71c4e24bc8304919874e28e1e0ce0d43b53014f5"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 7,
+      "index": 62,
+      "directory": "train/trial1/block007-flux_taco_interleaved"
+    },
+    "command_sha256": "5b17bdf0ba5653bb4e85cf23f837ccdfdd603346ad80e54021f37cd92ba52c3a",
+    "rank_sha256": {
+      "rank0.json": "e4cc84f87668d8d5c1e1a7886052e675ae8ebc7a7e7b932b2690ec59646561d7",
+      "rank1.json": "2406a293de2b269987d718cb02dfa0d7de5911818ca7221d739c6bc96920ba18",
+      "rank2.json": "3ac85bf4209394f4219e2f29558d6a3fd613311e9841bb9e8614b431f1feca74",
+      "rank3.json": "a92eed9425cfaf2a8e5f216d7b27f8ca0f0a9174461a72340d98dae64d1b53fd",
+      "rank4.json": "3f285da6d04266eba7d217e63964739aaad6f344df0544938e0d4a3f218ec2bc",
+      "rank5.json": "23e59d0fdd75bc39e1c7ca7f1edd822bca09069ee9befb19e3a2820797276933",
+      "rank6.json": "1371ffdd0b59d5827141e9d5ef079dd4c23704485626ff42d6ee8c53f6f05c5a",
+      "rank7.json": "76dd4a86c54d215fcd2e5c5dac2285542a7f1b98147f4b1c7b1340dbb564aaa0"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 7,
+      "index": 63,
+      "directory": "train/trial1/block007-flux_taco"
+    },
+    "command_sha256": "436ee6062787d448ca39bc99b7f11e6be5a8f4c40aec2ae768a641129ed70eb6",
+    "rank_sha256": {
+      "rank0.json": "3fef1dccd31e1b97b6ec6e61d6392e857cb0cc812889b4988c9d0221c68381f8",
+      "rank1.json": "b1e8a8be996578406b3046d21bd1c77accf9df69f660bd0a73e5a4d4c4ff7ff8",
+      "rank2.json": "d8b613ef8c2cba7c57bc32df7f6a1d7b3600f5aecf2b8ae9d784767a4aa1e77b",
+      "rank3.json": "eeee33265ee78be82f59104697ae7f40ba4d1b81946635095adbf29a7f6adb46",
+      "rank4.json": "7f997ced512b5dce97658096f645a3448cd9f525c16348cfad5e279151e9e89b",
+      "rank5.json": "3a743fb9f9a303fd1a3fbd08f8fccccec7b9a6b2b184157e11dc362110964b26",
+      "rank6.json": "69fbaf4f709f8c6e97a1cf96dd182011e918c4f3e14e26bdcba56e22421a7e33",
+      "rank7.json": "54db4fe4c533315a57af9f0b534734ce41030aef88c01dc20129b042d90b45d5"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux",
+      "trial": 1,
+      "block": 7,
+      "index": 64,
+      "directory": "train/trial1/block007-flux"
+    },
+    "command_sha256": "ad298d09cbba199870556a2e884296925386992a371944b82330a05823829f98",
+    "rank_sha256": {
+      "rank0.json": "afab82d703cb9ef3c613c1a2d45d701c526218b015f8a32d515b63e9f1d89c47",
+      "rank1.json": "d775ea4a2bf74d863e723686ca87c677ea314aaccb2d98a2503917e042944fad",
+      "rank2.json": "c23ea8f566d4122541a3eda39ccd46a99f7f105c1ca09910a92d99f362826ca4",
+      "rank3.json": "506442292661d2f33374c8691eb800957ac94894f42794fce3fd5cc7e1bc7f3c",
+      "rank4.json": "6e0ac37d186ecec069deef904fe387b592d2199140896a3703819eeea83ca351",
+      "rank5.json": "a34d108900f1f7550f319a6672081d903bb3b6d2a203f653ed3a893e4392b7ab",
+      "rank6.json": "a0acf338d7498db813f991d3a6914b68b80260d9994c476a23722296621830a7",
+      "rank7.json": "47d737a9d73ac8bcb2e5e679a829a0de2fd1c6ff4aae94514dc85b09889644b5"
+    }
+  },
+  {
+    "job": {
+      "stage": "train",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 7,
+      "index": 65,
+      "directory": "train/trial1/block007-flux_taco_interleaved_arrival"
+    },
+    "command_sha256": "457a96c8b38c72f577251e6cdee0791905eeebb26495040922e08ab6d4e4e122",
+    "rank_sha256": {
+      "rank0.json": "59d73073273e5f074b5a5b21ce8f7824326e957715c4f916c1d79aaa3706791c",
+      "rank1.json": "710f77caa2f9db024453ce28af77301937d1bd229e30a81a72295db0064f8bef",
+      "rank2.json": "acace343a74acb9eaac11040e41e6bd1929fda9cdf7aec5222f195a703b974dc",
+      "rank3.json": "78f8a5f406401e240c78a881b0248bf4e859c4aa0e26309444beb201492da710",
+      "rank4.json": "7bade74f32c7c7c4a3bb7509278bdb2cd1fce32e771ae4793a07500758f352a7",
+      "rank5.json": "789bd2a66df28178b1810bed3b9326b44e1ac38602ca89b96fc98ab0013a4e4f",
+      "rank6.json": "8ef75ff5b4a45acbab656226003f76267f880b40e9a071ac13745e885a97e5da",
+      "rank7.json": "05a41d0d5ad20c72b125cc6c15de8b9566ed137cd46aa4e5cd4c153c978d7ad7"
+    }
+  }
+]

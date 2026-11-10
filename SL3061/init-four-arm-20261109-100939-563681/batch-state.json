@@ -1,0 +1,14 @@
+{
+  "protocol": "rtx5090-flux-taco-arrival-four-arm-v1",
+  "run_id": "c05fc7c808ad4ec19ff33b820a6198f6",
+  "status": "completed",
+  "completed": true,
+  "scope": "train",
+  "finished_jobs": 66,
+  "place": 61,
+  "controller_pid": 77713,
+  "active_job": null,
+  "execution_plan_sha256": "cd6301fb2a7c6f61778c4004fd70c746400d32e4ba4b6b33a0b3cc63d3e370b0",
+  "report_sha256": "6f4de2aef62a89c93fc6d184b02782b53390717656e56b4fa056e72416b2514c",
+  "formal_optimizer_steps": 1600
+}

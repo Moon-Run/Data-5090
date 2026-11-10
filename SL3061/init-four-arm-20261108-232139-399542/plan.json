@@ -1,0 +1,669 @@
+{
+  "config": {
+    "protocol": "rtx5090-flux-taco-arrival-four-arm-v1",
+    "run_id": "b86a2374b2c248d5b6a2dc647923abc7",
+    "world_size": 8,
+    "model": {
+      "layers": 32,
+      "hidden": 4096,
+      "ffn": 16384,
+      "heads": 32,
+      "sequence": 2048,
+      "micro_batch": 1,
+      "accumulation_steps": 4,
+      "vocab": 33792,
+      "chunk_rows": 128
+    },
+    "timing": {
+      "warmup_steps": 10,
+      "timed_steps": 50,
+      "operator_warmup": 100,
+      "operator_iterations": 200
+    },
+    "seed": 1234,
+    "token_seed": 4321,
+    "nvcc": "/usr/local/cuda-12.9/bin/nvcc",
+    "cuda_home": "/usr/local/cuda-12.9",
+    "connections": 8,
+    "build_dir": "/workspace/TempName-5090/logs/5090/init-four-arm-20261108-232139-399542/build",
+    "build_jobs": 128,
+    "profile": false,
+    "source_manifest_sha256": "a0cb44d6f82ba28d8fd672d76470f752d6d9868620309f408f3a65a7a6c6bd06",
+    "backend": "flux-cutlass-dp-ready-nccl-v1",
+    "runtime_environment": {
+      "NCCL_VERSION": "2.27.3",
+      "TORCH_NCCL_USE_COMM_NONBLOCKING": "0",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_SHM_DISABLE": "0",
+      "NCCL_NVLS_ENABLE": "0",
+      "CUDA_DEVICE_MAX_CONNECTIONS": "8",
+      "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+      "CUDA_HOME": "/usr/local/cuda-12.9"
+    },
+    "calibration": {
+      "warmup": 2,
+      "iterations": 5,
+      "training_pairs": 3,
+      "confirmation_pairs": 3,
+      "min_gain": 0.002
+    },
+    "execution_plan": null,
+    "execution_plan_sha256": null
+  },
+  "scope": "train",
+  "trials": 1,
+  "blocks": 8,
+  "counterbalanced": true,
+  "schedule": [
+    {
+      "trial": 1,
+      "block": 0,
+      "arms": [
+        "flux",
+        "flux_taco",
+        "flux_taco_interleaved",
+        "flux_taco_interleaved_arrival"
+      ]
+    },
+    {
+      "trial": 1,
+      "block": 1,
+      "arms": [
+        "flux_taco",
+        "flux_taco_interleaved",
+        "flux_taco_interleaved_arrival",
+        "flux"
+      ]
+    },
+    {
+      "trial": 1,
+      "block": 2,
+      "arms": [
+        "flux_taco_interleaved",
+        "flux_taco_interleaved_arrival",
+        "flux",
+        "flux_taco"
+      ]
+    },
+    {
+      "trial": 1,
+      "block": 3,
+      "arms": [
+        "flux_taco_interleaved_arrival",
+        "flux",
+        "flux_taco",
+        "flux_taco_interleaved"
+      ]
+    },
+    {
+      "trial": 1,
+      "block": 4,
+      "arms": [
+        "flux_taco_interleaved_arrival",
+        "flux_taco_interleaved",
+        "flux_taco",
+        "flux"
+      ]
+    },
+    {
+      "trial": 1,
+      "block": 5,
+      "arms": [
+        "flux",
+        "flux_taco_interleaved_arrival",
+        "flux_taco_interleaved",
+        "flux_taco"
+      ]
+    },
+    {
+      "trial": 1,
+      "block": 6,
+      "arms": [
+        "flux_taco",
+        "flux",
+        "flux_taco_interleaved_arrival",
+        "flux_taco_interleaved"
+      ]
+    },
+    {
+      "trial": 1,
+      "block": 7,
+      "arms": [
+        "flux_taco_interleaved",
+        "flux_taco",
+        "flux",
+        "flux_taco_interleaved_arrival"
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "stage": "preflight",
+      "arm": "flux",
+      "trial": 0,
+      "block": 0,
+      "index": 0,
+      "directory": "preflight"
+    },
+    {
+      "stage": "calibrate",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 0,
+      "block": 0,
+      "index": 1,
+      "directory": "calibrate"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux",
+      "trial": 1,
+      "block": 0,
+      "index": 2,
+      "directory": "operator/trial1/block000-flux"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 0,
+      "index": 3,
+      "directory": "operator/trial1/block000-flux_taco"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 0,
+      "index": 4,
+      "directory": "operator/trial1/block000-flux_taco_interleaved"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 0,
+      "index": 5,
+      "directory": "operator/trial1/block000-flux_taco_interleaved_arrival"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 1,
+      "index": 6,
+      "directory": "operator/trial1/block001-flux_taco"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 1,
+      "index": 7,
+      "directory": "operator/trial1/block001-flux_taco_interleaved"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 1,
+      "index": 8,
+      "directory": "operator/trial1/block001-flux_taco_interleaved_arrival"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux",
+      "trial": 1,
+      "block": 1,
+      "index": 9,
+      "directory": "operator/trial1/block001-flux"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 2,
+      "index": 10,
+      "directory": "operator/trial1/block002-flux_taco_interleaved"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 2,
+      "index": 11,
+      "directory": "operator/trial1/block002-flux_taco_interleaved_arrival"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux",
+      "trial": 1,
+      "block": 2,
+      "index": 12,
+      "directory": "operator/trial1/block002-flux"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 2,
+      "index": 13,
+      "directory": "operator/trial1/block002-flux_taco"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 3,
+      "index": 14,
+      "directory": "operator/trial1/block003-flux_taco_interleaved_arrival"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux",
+      "trial": 1,
+      "block": 3,
+      "index": 15,
+      "directory": "operator/trial1/block003-flux"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 3,
+      "index": 16,
+      "directory": "operator/trial1/block003-flux_taco"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 3,
+      "index": 17,
+      "directory": "operator/trial1/block003-flux_taco_interleaved"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 4,
+      "index": 18,
+      "directory": "operator/trial1/block004-flux_taco_interleaved_arrival"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 4,
+      "index": 19,
+      "directory": "operator/trial1/block004-flux_taco_interleaved"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 4,
+      "index": 20,
+      "directory": "operator/trial1/block004-flux_taco"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux",
+      "trial": 1,
+      "block": 4,
+      "index": 21,
+      "directory": "operator/trial1/block004-flux"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux",
+      "trial": 1,
+      "block": 5,
+      "index": 22,
+      "directory": "operator/trial1/block005-flux"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 5,
+      "index": 23,
+      "directory": "operator/trial1/block005-flux_taco_interleaved_arrival"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 5,
+      "index": 24,
+      "directory": "operator/trial1/block005-flux_taco_interleaved"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 5,
+      "index": 25,
+      "directory": "operator/trial1/block005-flux_taco"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 6,
+      "index": 26,
+      "directory": "operator/trial1/block006-flux_taco"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux",
+      "trial": 1,
+      "block": 6,
+      "index": 27,
+      "directory": "operator/trial1/block006-flux"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 6,
+      "index": 28,
+      "directory": "operator/trial1/block006-flux_taco_interleaved_arrival"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 6,
+      "index": 29,
+      "directory": "operator/trial1/block006-flux_taco_interleaved"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 7,
+      "index": 30,
+      "directory": "operator/trial1/block007-flux_taco_interleaved"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 7,
+      "index": 31,
+      "directory": "operator/trial1/block007-flux_taco"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux",
+      "trial": 1,
+      "block": 7,
+      "index": 32,
+      "directory": "operator/trial1/block007-flux"
+    },
+    {
+      "stage": "operator",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 7,
+      "index": 33,
+      "directory": "operator/trial1/block007-flux_taco_interleaved_arrival"
+    },
+    {
+      "stage": "train",
+      "arm": "flux",
+      "trial": 1,
+      "block": 0,
+      "index": 34,
+      "directory": "train/trial1/block000-flux"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 0,
+      "index": 35,
+      "directory": "train/trial1/block000-flux_taco"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 0,
+      "index": 36,
+      "directory": "train/trial1/block000-flux_taco_interleaved"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 0,
+      "index": 37,
+      "directory": "train/trial1/block000-flux_taco_interleaved_arrival"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 1,
+      "index": 38,
+      "directory": "train/trial1/block001-flux_taco"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 1,
+      "index": 39,
+      "directory": "train/trial1/block001-flux_taco_interleaved"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 1,
+      "index": 40,
+      "directory": "train/trial1/block001-flux_taco_interleaved_arrival"
+    },
+    {
+      "stage": "train",
+      "arm": "flux",
+      "trial": 1,
+      "block": 1,
+      "index": 41,
+      "directory": "train/trial1/block001-flux"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 2,
+      "index": 42,
+      "directory": "train/trial1/block002-flux_taco_interleaved"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 2,
+      "index": 43,
+      "directory": "train/trial1/block002-flux_taco_interleaved_arrival"
+    },
+    {
+      "stage": "train",
+      "arm": "flux",
+      "trial": 1,
+      "block": 2,
+      "index": 44,
+      "directory": "train/trial1/block002-flux"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 2,
+      "index": 45,
+      "directory": "train/trial1/block002-flux_taco"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 3,
+      "index": 46,
+      "directory": "train/trial1/block003-flux_taco_interleaved_arrival"
+    },
+    {
+      "stage": "train",
+      "arm": "flux",
+      "trial": 1,
+      "block": 3,
+      "index": 47,
+      "directory": "train/trial1/block003-flux"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 3,
+      "index": 48,
+      "directory": "train/trial1/block003-flux_taco"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 3,
+      "index": 49,
+      "directory": "train/trial1/block003-flux_taco_interleaved"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 4,
+      "index": 50,
+      "directory": "train/trial1/block004-flux_taco_interleaved_arrival"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 4,
+      "index": 51,
+      "directory": "train/trial1/block004-flux_taco_interleaved"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 4,
+      "index": 52,
+      "directory": "train/trial1/block004-flux_taco"
+    },
+    {
+      "stage": "train",
+      "arm": "flux",
+      "trial": 1,
+      "block": 4,
+      "index": 53,
+      "directory": "train/trial1/block004-flux"
+    },
+    {
+      "stage": "train",
+      "arm": "flux",
+      "trial": 1,
+      "block": 5,
+      "index": 54,
+      "directory": "train/trial1/block005-flux"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 5,
+      "index": 55,
+      "directory": "train/trial1/block005-flux_taco_interleaved_arrival"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 5,
+      "index": 56,
+      "directory": "train/trial1/block005-flux_taco_interleaved"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 5,
+      "index": 57,
+      "directory": "train/trial1/block005-flux_taco"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 6,
+      "index": 58,
+      "directory": "train/trial1/block006-flux_taco"
+    },
+    {
+      "stage": "train",
+      "arm": "flux",
+      "trial": 1,
+      "block": 6,
+      "index": 59,
+      "directory": "train/trial1/block006-flux"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 6,
+      "index": 60,
+      "directory": "train/trial1/block006-flux_taco_interleaved_arrival"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 6,
+      "index": 61,
+      "directory": "train/trial1/block006-flux_taco_interleaved"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco_interleaved",
+      "trial": 1,
+      "block": 7,
+      "index": 62,
+      "directory": "train/trial1/block007-flux_taco_interleaved"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco",
+      "trial": 1,
+      "block": 7,
+      "index": 63,
+      "directory": "train/trial1/block007-flux_taco"
+    },
+    {
+      "stage": "train",
+      "arm": "flux",
+      "trial": 1,
+      "block": 7,
+      "index": 64,
+      "directory": "train/trial1/block007-flux"
+    },
+    {
+      "stage": "train",
+      "arm": "flux_taco_interleaved_arrival",
+      "trial": 1,
+      "block": 7,
+      "index": 65,
+      "directory": "train/trial1/block007-flux_taco_interleaved_arrival"
+    }
+  ]
+}

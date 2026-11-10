@@ -1,0 +1,60 @@
+{
+  "protocol": "rtx5090-flux-taco-arrival-four-arm-v1",
+  "run_id": "c05fc7c808ad4ec19ff33b820a6198f6",
+  "world_size": 8,
+  "place": 61,
+  "model": {
+    "layers": 32,
+    "hidden": 4096,
+    "ffn": 16384,
+    "heads": 32,
+    "sequence": 2048,
+    "micro_batch": 1,
+    "accumulation_steps": 4,
+    "vocab": 33792,
+    "chunk_rows": 128
+  },
+  "timing": {
+    "warmup_steps": 10,
+    "timed_steps": 50,
+    "operator_warmup": 100,
+    "operator_iterations": 200
+  },
+  "seed": 1234,
+  "token_seed": 4321,
+  "nvcc": "/usr/local/cuda-12.9/bin/nvcc",
+  "cuda_home": "/usr/local/cuda-12.9",
+  "connections": 8,
+  "build_dir": "/workspace/Data-5090/SL3061/init-four-arm-20261109-100939-563681/build",
+  "build_jobs": 128,
+  "profile": false,
+  "source_manifest_sha256": "f4f2ab265a356b3bf2fa52f06cdefa98b4f8a10166046eef68e6cd7b91ee2657",
+  "backend": "flux-cutlass-dp-ready-nccl-v1",
+  "runtime_environment": {
+    "NCCL_VERSION": "2.27.3",
+    "TORCH_NCCL_USE_COMM_NONBLOCKING": "0",
+    "NCCL_P2P_DISABLE": "1",
+    "NCCL_SHM_DISABLE": "0",
+    "NCCL_NVLS_ENABLE": "0",
+    "CUDA_DEVICE_MAX_CONNECTIONS": "8",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "CUDA_HOME": "/usr/local/cuda-12.9"
+  },
+  "calibration": {
+    "warmup": 2,
+    "iterations": 5,
+    "training_pairs": 3,
+    "confirmation_pairs": 3,
+    "min_gain": 0.002
+  },
+  "execution_plan": null,
+  "execution_plan_sha256": null,
+  "job": {
+    "stage": "preflight",
+    "arm": "flux",
+    "trial": 0,
+    "block": 0,
+    "index": 0,
+    "directory": "preflight"
+  }
+}
